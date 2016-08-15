@@ -14,6 +14,10 @@
 \usepackage{url}
 \def\UrlBreaks{\do\/\do-}
 \usepackage[pdftex,breaklinks]{hyperref}
+\usepackage{import}
+\usepackage{tikz}
+%\usepackage{caption}
+%\captionsetup[figure]{skip=0pt}
 
 \begin{document}
 %
@@ -99,18 +103,135 @@ Also, our previous work~\cite{crick-et-al-hea:2015,davenport-et-al:latice2016}.
 
 \subsection{Universities and Courses}
 
+\begin{figure}
+\begin{center}
+\subimport{plots/}{tariffGroup.tex}
+\caption{The number of universities per Tariff Group.}
+\end{center}
+\end{figure}
+
 \subsection{Student Numbers}
 
 \subsection{Languages}
 
-\subsection{Programming Paradigm}
+\begin{table}[]
+\centering
+\caption{The number of programming languages used in first programming courses.}
+\label{tab:numLanguages}
+\begin{tabular}{ccccc}
+\hline
+Languages & 1  & 2  & 3 & 4 \\ \hline
+Courses   & 61 & 17 & 3 & 1 \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{figure}
+\begin{center}
+\subimport{plots/}{langPercentCompare.tex}
+\end{center}
+\caption{Language popularity by percentage of courses and students.}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\subimport{plots/}{reasonsByCourseCompare.tex}
+\end{center}
+\caption{Reasons given for choosing a programming language by percentage for: all languages; Java; and Python.}
+\end{figure}
+
+
+\begin{figure}
+\begin{center}
+\subimport{plots/}{UseAndDifficultyCompareLanguages.tex}
+\end{center}
+\caption{The median of the perceived difficulty and usefulness of language, where 1 is `extremely easy' and 7 is `extremely difficult' for difficulty and 1 is `extremely useful' and 7 is `extremely useless' for usefulness.  Answers must have been given by at least two instructors.}
+\end{figure}
+
+
+
+
+\begin{table}[]
+\centering
+\caption{The main paradigm in use in the first programming course.}
+\label{tab:paradigm}
+\begin{tabular}{cccc}
+\hline
+Paradigm & Object-Oriented & Procedural & Functional \\ \hline
+Courses  & 40              & 27         & 7          \\ \hline
+\end{tabular}
+\end{table}
+
 
 \subsection{Instructor Experience}
 
+\begin{table}[]
+\centering
+\caption{The number of years the instructor has been involved in teaching introductory programming.}
+\label{tab:yearsTeaching}
+\begin{tabular}{ccccccc}
+\hline
+Years       & \textless 2 & 2 - 5 & 5 - 10 & 10 - 20 & 20 - 30 & \textgreater 30 \\ \hline
+Instructors & 3          & 9     & 9      & 27      & 19      & 7              \\ \hline
+\end{tabular}
+\end{table}
+
 \subsection{IDEs and Tools}
+
+\begin{table}[]
+\centering
+\caption{The number of tools/environments used in first programming courses.}
+\label{tab:numTools}
+\begin{tabular}{cccccc}
+\hline
+Tools   & 1  & 2  & 3 & 4 & 8 \\ \hline
+Courses & 34 & 15 & 6 & 2 & 1 \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{figure}
+\begin{center}
+\subimport{plots/}{toolPercentCompare.tex}
+\caption{Tool or environment popularity by percentage of courses and students.}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\subimport{plots/}{reasonsByCourseCompareTool.tex}
+\end{center}
+\caption{Reasons given for choosing a tool or environment by percentage for: all tools and environments; BlueJ; and Eclipse.}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\subimport{plots/}{timingOtherCourseTool.tex}
+\end{center}
+\caption{For each tool or environment, whether it is used: for an initial part of the first programming course; throughout the whole of the first programming course; in any other course in the degree.}
+\end{figure}
+
+
+\begin{figure}
+\begin{center}
+\subimport{plots/}{DifficultyYouStudentsCompareTools.tex}
+\end{center}
+\caption{The median difficulty rating of tool/environment for the instructor and students to use, where 1 is `extremely easy' and 7 is `extremely difficult'.  Answers must have been given by at least two instructors.}
+\end{figure}
 
 \subsection{Other Aspects of the Course}
 
+\begin{figure}
+\begin{center}
+\subimport{plots/}{Steps.tex}
+\end{center}
+\caption{Steps taken to determine whether students have received unauthorised assistance on assignments.}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\subimport{plots/}{Resources.tex}
+\end{center}
+\caption{Resources provided to students.}
+\end{figure}
 \subsection{Aims of an Introductory Programming Course}
 
 
