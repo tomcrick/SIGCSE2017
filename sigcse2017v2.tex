@@ -79,7 +79,7 @@ The results indicate a trend towards...
 
 \section{Introduction}\label{intro}
 
-\cite{mason+cooper:2014} is the latest in a long line \cite{deraadt-et-al:2004,mason-et-al:2012} of papers surveying the teaching of introductory programming courses in Australasia. However, such surveys are not the norm elsewhere, and this paper reports the authors' findings from running the first such survey in the United Kingdom.
+\cite{mason+cooper:2014} is the latest in a long line \cite{deraadt-et-al:2004,mason-et-al:2012} of papers surveying the teaching of introductory programming courses in Australasia. However, such surveys are not the norm elsewhere, and this paper reports the authors' findings from runningthe first such survey in the United Kingdom.
 
 UK policy context
 e.g. schools~\cite{brown-et-al-sigcse2013,brown-et-al-toce2014},
@@ -93,20 +93,11 @@ Also, our previous work~\cite{crick-et-al-hea:2015,davenport-et-al:latice2016}.
 %Hat tip to the Australian work~\cite{deraadt-et-al:2004,mason-et-al:2012,mason+cooper:2014}.
 
 \section{Methodology}\label{method}
+
 \subsection{Recruitment of Participants}
 
-To recruit participants for the survey, a general invitation email was sent to the Council of Professors and Heads of Computing (CPHC) mailing list. CPHC have members from over 100 UK universities, and are the representational body for this group in the UK\footnote{\texttt{https://cphc.ac.uk/who-we-are/}}.The invitation asked for the survey to be passed on to the most appropriate person to fill it out; Director of Studies, Chair of Teaching Committee or the best fit for the individual institution.
-
-The survey was hosted online, and was open from mid-May until the end of June 2016, at which point it was closed and the results were downloaded and analysed. 
 \subsection{Questions}
 
-The questions used in the survey were generously provided by the authors of~\cite{mason+cooper:2014}, so as to allow direct comparison between the results of this survey and that of the Australian/New Zealand 2014 survey. Where possible, questions were left unchanged, although a small minority were edited to reflect the UK target audience. 
-
-As written in~\cite{mason+cooper:2014}, text in the survey made clear that the terminology ``course'' was used for ``the basic unit of study that is completed by students towards a degree, usually studied over a period pf a semester or session, in conjunction with other units of study''. 
-
-The first section of the survey asked about the programming language(s) in use, the reasons for their choice, and the perceived difficulty of usefulness of the programming language(s). Following this were questions regarding the use of environments or development tools; which ones were used, the reasons for their choice and the perceived difficulty. General questions about paradigm, instructor experience and external delivery were asked, along with questions regarding students receiving unauthorised assistance, and the resources provided to students. Finally, participants were asked to identify their top three main aims when teaching introductory programming, and were also allowed to provide further comments. 
-
-In~\cite{mason+cooper:2014}, participants were asked to rank the importance of the given reasons for choosing a programming language, environment or tool. Due to technical limitations in online survey tool used, it was not possible to do so in this survey.
 
 \section{Results and Discussion}\label{results}
 
@@ -130,7 +121,7 @@ In~\cite{mason+cooper:2014}, participants were asked to rank the importance of t
 \begin{tabular}{ccccc}
 \hline
 Languages & 1  & 2  & 3 & 4 \\ \hline
-Courses   & 59 & 17 & 3 & 1 \\ \hline
+Courses   & 61 & 17 & 3 & 1 \\ \hline
 \end{tabular}
 \end{table}
 
@@ -156,19 +147,8 @@ Courses   & 59 & 17 & 3 & 1 \\ \hline
 \caption{The median of the perceived difficulty and usefulness of language, where 1 is `extremely easy' and 7 is `extremely difficult' for difficulty and 1 is `extremely useful' and 7 is `extremely useless' for usefulness.  Answers must have been given by at least two instructors.}
 \end{figure}
 
-\begin{figure}
-\begin{center}
-\subimport{plots/}{langByTariffPercent.tex}
-\end{center}
-\caption{The breakdown of programming languages for each of the Tariff Groups.}
-\end{figure}
 
-\begin{figure}
-\begin{center}
-\subimport{plots/}{TariffByLangPercent.tex}
-\end{center}
-\caption{The breakdown of programming languages for each of the Tariff Groups.}
-\end{figure}
+
 
 \begin{table}[]
 \centering
@@ -181,19 +161,6 @@ Courses  & 40              & 27         & 7          \\ \hline
 \end{tabular}
 \end{table}
 
-\begin{figure}
-\begin{center}
-\subimport{plots/}{paradigmByTariffPercent.tex}
-\end{center}
-\caption{}
-\end{figure}
-
-\begin{figure}
-\begin{center}
-\subimport{plots/}{TariffByParadigmPercent.tex}
-\end{center}
-\caption{}
-\end{figure}
 
 \subsection{Instructor Experience}
 
@@ -266,7 +233,7 @@ Courses & 34 & 15 & 6 & 2 & 1 \\ \hline
 \caption{Resources provided to students.}
 \end{figure}
 \subsection{Aims of an Introductory Programming Course}
- \cite{mason+cooper:2014} asked their respondents for the aims of their introductory programming course. They asked for (up to) three aims, but ??Ellen: I thought you said they just used one, but looking at the headcount in the firgure, it looks like al three?? in their Figure 15. As part o four policy of reproducing  \cite{mason+cooper:2014} as closely as possible, we asked the same. The authors then attempted to classify the free-text answers into the same categorisation as  \cite{mason+cooper:2014} used. While it is trivial to map the written aim ``Thinking algorithmically'' to \cite{mason+cooper:2014}'s ``Algorithmic thinking'' and so on, many were not so clear: for example, we mapped ``To learn a specific language'' to ``syntax/writing basic code''. There were also a class of aims, such as ``Establish professional software development practices'', that seemed very coherent, but didn't map clearly to the \cite{mason+cooper:2014} aims. These we have categorised as ``Software Engineering''.
+ \cite{mason+cooper:2014} asked their respondents for the aims of their introductory programming course. They asked for (up to) three aims, but ??Ellen: I thought you said they just used one, but looking at the headcount in the firgure, it looks like all three?? in their Figure 15. As part of our policy of reproducing  \cite{mason+cooper:2014} as closely as possible, we asked the same. The authors then attempted to classify the free-text answers into the same categorisation as  \cite{mason+cooper:2014} used. While it is trivial to map the written aim ``Thinking algorithmically'' to \cite{mason+cooper:2014}'s ``Algorithmic thinking'' and so on, many were not so clear: for example, we mapped ``To learn a specific language'' to ``syntax/writing basic code''. There were also a class of aims, such as ``Establish professional software development practices'', that seemed very coherent, but didn't map clearly to the \cite{mason+cooper:2014} aims. These we have categorised as ``Software Engineering''.
 
 \section{General Discussion}\label{discussion}
 
@@ -279,9 +246,9 @@ Here we compare with \cite{mason+cooper:2014}, the latest Australasian survey.
 \section{Acknowledgements}
 
 The authors would like to thank the participants for their engagement
-with the survey, as well as...
-% HEFCE?
-% CPHC?
+with the survey, as well as the authors of [8] for providing us with their survey and permission to use it.
+% HEFCE? I think we should in the final version, but leave them out for now.
+% CPHC? Not really
 % GW4 - JHD has asked what the form of words should be.
 We are grateful to the GW4 Alliance (Universities of Bath, Bristol, Cardiff and Exeter) for funding the underpinning survey.
 % bib
