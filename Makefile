@@ -1,4 +1,4 @@
-targets = sigcse2017.pdf
+targets = sigcse2017v2.pdf
 
 all: $(targets)
 
