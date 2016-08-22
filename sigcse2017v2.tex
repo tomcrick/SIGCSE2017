@@ -117,19 +117,21 @@ In~\cite{mason+cooper:2014}, participants were asked to rank the importance of t
 \section{Results and Discussion}\label{results}
 
 \subsection{Universities and Courses}
-JHD: we need some discussion of response rates, either here or via Figure 1 also showing response rates, as in e-mail to Ellen
+%JHD: we need some discussion of response rates, either here or via Figure 1 also showing response rates, as in e-mail to Ellen
+We had responses from 79 universities. Excluding the Open University's 3200 students, this was 13462 students, with a mean of 173 (but a standard deviation of 88). Looking at Figure \ref{fig:TG} we see good response rates, apart from the specialist HEIs (most of whom do not teach computing) and the ``low tariff'' English ones. Fewer of these teach computing, % e.g. all the 'arts' ones
+but we are not convinced that this factor alone explains the response rate.
 \begin{figure}
 \begin{center}
 \subimport{plots/}{tariffGroupCompare.tex}\vskip-12pt
 \caption{The number of responding universities per Nation/   
- Tariff Group.}
+ Tariff Group.\label{fig:TG}}
 \end{center}
 \end{figure}
 
-\subsection{Student Numbers}
-??
+%\subsection{Student Numbers}
+%??
 \subsection{Languages}
-This is the immediate major difference with \cite{mason+cooper:2014}. Their survey showed a dead heat (27.3\% of courses) between Java and Python, with Python winning (33.7\% to 26.9\%) when weighted by the number of students on the course.  Our findings  (Figure \ref{fig:lang}) show that Java is a clear winner by any metric, being used in just under half the courses, while the runner-up, Python, is in use in  13.2\%. The C family (C, C++ and C\#) together scores 23.6\% by courses and 19.5\% by students. Figure \ref{fig:lang} shows very little effect of student-number weighting \emph{but} we have excluded the Open University from this weighting, as its 3200 students learning Python (and Sense, a variant of Scratch) would have distorted the comparison.
+This is the immediate major difference with \cite{mason+cooper:2014}. Their survey showed a dead heat (27.3\% of courses) between Java and Python, with Python winning (33.7\% to 26.9\%) when weighted by the number of students on the course.  Our findings  (Figure \ref{fig:lang}) show that Java is a clear winner by any metric, being used in just under half the courses, while the runner-up, Python, is in use in  13.2\%. The C family (C, C++ and C\#) together scores 23.6\% by courses and 19.5\% by students. Figure \ref{fig:lang} shows the effect of student-number weighting \emph{but} we have excluded the Open University from this weighting, as its 3200 students learning Python (and Sense, a variant of Scratch) would have distorted the comparison.
 \begin{table}[]
 \centering
 \caption{The number of programming languages used in first programming courses.}
@@ -157,7 +159,7 @@ Courses   & 59 & 17 & 3 & 1 \\ \hline
 \par
 Figure \ref{fig:reasons} shows some of the reasons for this: Java scores higher on ``relevance to industry'' and, perhaps somewhat surprisingly, much higher on ``ObjectOriented language''.  @Tom: do you agree with ``somewhat surprisingly''?
 
-Figure \ref{fig;LangTariff} breaks down the choice of language by nation and tariff group.  It is noticeable that the three English tariff groups differ significantly, with Python outnumbering Java in the low tariff universities, and C being almost exclusively in the hogh tariff universities.
+Figure \ref{fig;LangTariff} breaks down the choice of language by nation and tariff group.  It is noticeable that the three English tariff groups differ significantly, with Python outnumbering Java in the low tariff universities, and C being almost exclusively in the high tariff universities.
 
 \begin{figure}
 \begin{center}
@@ -211,7 +213,7 @@ Courses  & 40              & 27         & 7          \\ \hline
 \begin{figure}
 \begin{center}
 \subimport{plots/}{langByParadigmPercent.tex}
-\end{center}
+\end{center}\vskip-18pt
 \caption{The breakdown of programming languages in use for each paradigm.}
 \end{figure}
 
@@ -219,12 +221,12 @@ Courses  & 40              & 27         & 7          \\ \hline
 \begin{figure}
 \begin{center}
 \subimport{plots/}{ParadigmByLangPercent.tex}
-\end{center}
+\end{center}\vskip-18pt
 \caption{The breakdown of the main paradigm in use for each programming language.}
 \end{figure}
 
 \subsection{Instructor Experience}
-
+Data about the experience of the main teacher (@Ellen: can we quote the question here) are given in Table \ref{tab:yearsTeaching}.
 \begin{table}[]
 \centering
 \caption{The number of years the instructor has been involved in teaching introductory programming.}
@@ -237,7 +239,7 @@ Instructors & 3          & 9     & 9      & 27      & 19      & 7              \
 \end{table}
 
 \subsection{IDEs and Tools}
-
+Various data about IDEs and tools are collected in Figures \ref{fig:tools}--\ref{fig:toolhard}. We note that, while Eclipse is the most popular tool by some way (Figure \ref{fig:tools}), it is also deemed to be most difficult (Figure \ref{fig:toolhard}). This, apparently perverse, practice might be explained by the extent of re-use of Eclipse in other courses (Figure \ref{fig:toolreuse}).
 \begin{table}[]
 \centering
 \caption{The number of tools/environments used in first programming courses.}
@@ -252,7 +254,7 @@ Courses & 34 & 15 & 6 & 2 & 1 \\ \hline
 \begin{figure}
 \begin{center}
 \subimport{plots/}{toolPercentCompare.tex}
-\caption{Tool or environment popularity by percentage of courses and students.}
+\caption{Tool or environment popularity by percentage of courses and students.\label{fig:tools}}
 \end{center}
 \end{figure}
 
@@ -266,8 +268,8 @@ Courses & 34 & 15 & 6 & 2 & 1 \\ \hline
 \begin{figure}
 \begin{center}
 \subimport{plots/}{timingOtherCourseTool.tex}
-\end{center}
-\caption{For each tool or environment, whether it is used: for an initial part of the first programming course; throughout the whole of the first programming course; in any other course in the degree.}
+\end{center}\vskip-18pt
+\caption{For each tool or environment, whether it is used: for an initial part of the first programming course; throughout the whole of the first programming course; in any other course in the degree.\label{fig:toolreuse}}
 \end{figure}
 
 
@@ -275,7 +277,7 @@ Courses & 34 & 15 & 6 & 2 & 1 \\ \hline
 \begin{center}
 \subimport{plots/}{DifficultyYouStudentsCompareTools.tex}
 \end{center}
-\caption{The median difficulty rating of tool/environment for the instructor and students to use, where 1 is `extremely easy' and 7 is `extremely difficult'.  Answers must have been given by at least two instructors.}
+\caption{The median difficulty rating of tool/environment for the instructor and students to use, where 1 is `extremely easy' and 7 is `extremely difficult'.  Answers must have been given by at least two instructors.\label{fig:toolhard}}
 \end{figure}
 
 \subsection{Other Aspects of the Course}
@@ -283,25 +285,25 @@ Courses & 34 & 15 & 6 & 2 & 1 \\ \hline
 \begin{figure}
 \begin{center}
 \subimport{plots/}{Steps.tex}
-\end{center}
+\end{center}\vskip-18pt
 \caption{Steps taken to determine whether students have received unauthorised assistance on assignments.}
 \end{figure}
 
 \begin{figure}
 \begin{center}
 \subimport{plots/}{Resources.tex}
-\end{center}
+\end{center}\vskip-18pt
 \caption{Resources provided to students.}
 \end{figure}
 \subsection{Aims of an Introductory Programming Course}
- \cite{mason+cooper:2014} asked their respondents for the aims of their introductory programming course. They asked for (up to) three aims, but ??Ellen: I thought you said they just used one, but looking at the headcount in the firgure, it looks like all three?? (@James: they also asked for 3 aims but grouped all those aims together to give the figure in their report - just like we are doing.) in their Figure 15. As part of our policy of reproducing  \cite{mason+cooper:2014} as closely as possible, we asked the same. The authors then attempted to classify the free-text answers into the same categorisation as  \cite{mason+cooper:2014} used. While it is trivial to map the written aim ``Thinking algorithmically'' to \cite{mason+cooper:2014}'s ``Algorithmic thinking'' and so on, many were not so clear: for example, we mapped ``To learn a specific language'' to ``syntax/writing basic code''. There were also a class of aims, such as ``Establish professional software development practices'', that seemed very coherent, but didn't map clearly to the \cite{mason+cooper:2014} aims. These we have categorised as ``Software Engineering''.
+ \cite{mason+cooper:2014} asked their respondents for the aims of their introductory programming course. They, and we, asked for (up to) three aims. The authors then attempted to classify the free-text answers into the same categorisation as  \cite{mason+cooper:2014} used. While it is trivial to map the written aim ``Thinking algorithmically'' to \cite{mason+cooper:2014}'s ``Algorithmic thinking'' and so on, many were not so clear: for example, we mapped ``To learn a specific language'' to ``syntax/writing basic code''. There were also a class of aims, such as ``Establish professional software development practices'', that seemed very coherent, but didn't map clearly to the \cite{mason+cooper:2014} aims. These we have categorised as ``Software Engineering''.
 
 \section{General Discussion}\label{discussion}
 
 \subsection{The U.K. context}
 
 \subsection{Comparison with Australasia}
-Here we compare with \cite{mason+cooper:2014}, the latest Australasian survey.
+Here we compare with \cite{mason+cooper:2014}, the latest Australasian survey. We have already commented on the major difference in language choice,  which colours many of the other comparisons. Another difference shows up in Figure \ref{fig:tools} versus \cite{mason+cooper:2014}'s Figure 11. There, ``None'' and ``Other'' were the top two categories, with Idle, at 15\%, the most popular named product. In the UK, ``Other'' is fifth and Idle seventh.
 
 
 \section{Acknowledgements}
