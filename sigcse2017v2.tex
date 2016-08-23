@@ -123,7 +123,7 @@ Most questions were not mandatory; the exceptions were ``what programming langua
 Upon completion of the survey, 155 instructors had, at least, started the survey. Sixty-one of these dropped out before answering the mandatory questions, and a further 14 were duplicates. Therefore, the results presented here are drawn from the responses of 80 instructors from at least 70 universities. Some participants did not answer all questions and due to this the response rate varies by question.
 
 Excluding the Open University's 3200 students, the participants in the survey represented 13462 students, with a mean of 173 (but a standard deviation of 88). Looking at Figure \ref{fig:TG} we see good response rates, apart from the specialist HEIs (most of whom do not teach computing) and the ``low tariff'' English ones. Fewer of these teach computing, % e.g. all the 'arts' ones
-but we are not convinced that this factor alone explains the response rate.
+but we are not convinced that this factor alone explains the response rate. In Northern Ireland, we had responses from the two universities, but not the university colleges, which are historically teacher-training colleges.
 \begin{figure}
 \begin{center}
 \subimport{plots/}{tariffGroupCompare.tex}\vskip-12pt
@@ -168,8 +168,9 @@ Figure \ref{fig;LangTariff} breaks down the choice of language by nation and tar
 \begin{figure}
 \begin{center}
 \subimport{plots/}{UseAndDifficultyCompareLanguages.tex}
-\end{center}
-\caption{The median of the perceived difficulty and usefulness of language, where 1 is `extremely easy' and 7 is `extremely difficult' for difficulty and 1 is `extremely useful' and 7 is `extremely useless' for usefulness.  Answers must have been given by at least two instructors.}
+\end{center}\vskip-18pt
+%\caption{The median of the perceived difficulty and usefulness of language, where 1 is `extremely easy' and 7 is `extremely difficult' for difficulty and 1 is `extremely useful' and 7 is `extremely useless' for usefulness.  Answers must have been given by at least two instructors.}
+\caption{The median of the perceived difficulty and [pedagogic] usefulness of language, where 1 is `extremely easy/useful' and 7 is `extremely difficult/useless'.  Answers must have been given by at least two instructors.\label{fig:utility}}
 \end{figure}
 
 \begin{figure}
@@ -229,10 +230,8 @@ Courses  & 40              & 27         & 7          \\ \hline
 \caption{The breakdown of the main paradigm in use for each programming language.}
 \end{figure}
 
-\subsection{Instructor Experience}
-Participants were asked: ``How many years have you been involved in teaching of introductory programming?''. The results, shown in Table~\ref{tab:yearsTeaching}, indicate that of the survey participants, the average was between 10 - 20 years.
 
-\begin{table}[]
+\begin{table}[h]
 \centering
 \caption{The number of years the instructor has been involved in teaching introductory programming.}
 \label{tab:yearsTeaching}
@@ -242,9 +241,9 @@ Years       & \textless 2 & 2 - 5 & 5 - 10 & 10 - 20 & 20 - 30 & \textgreater 30
 Instructors & 3          & 9     & 9      & 27      & 19      & 7              \\ \hline
 \end{tabular}
 \end{table}
+\subsection{Instructor Experience}
+Participants were asked: ``How many years have you been involved in teaching of introductory programming?''. The results, shown in Table~\ref{tab:yearsTeaching}, indicate that of the survey participants, the average was between 10 - 20 years.
 
-\subsection{IDEs and Tools}
-Various data about IDEs and tools are collected in Figures \ref{fig:tools}--\ref{fig:toolhard}. We note that, while Eclipse is the most popular tool by some way (Figure \ref{fig:tools}), it is also deemed to be most difficult (Figure \ref{fig:toolhard}). This, apparently perverse, practice might be explained by the extent of re-use of Eclipse in other courses (Figure \ref{fig:toolreuse}).
 \begin{table}[]
 \centering
 \caption{The number of tools/environments used in first programming courses.}
@@ -262,6 +261,8 @@ Courses & 34 & 15 & 6 & 2 & 1 \\ \hline
 \caption{Tool or environment popularity by percentage of courses and students.\label{fig:tools}}
 \end{center}
 \end{figure}
+\subsection{IDEs and Tools}
+Various data about IDEs and tools are collected in Figures \ref{fig:tools}--\ref{fig:toolhard}. We note that, while Eclipse is the most popular tool by some way (Figure \ref{fig:tools}), it is also deemed to be most difficult (Figure \ref{fig:toolhard}). This, apparently perverse, practice might be explained by the extent of re-use of Eclipse in other courses (Figure \ref{fig:toolreuse}).
 
 \begin{figure}
 \begin{center}
@@ -291,10 +292,12 @@ Courses & 34 & 15 & 6 & 2 & 1 \\ \hline
 \begin{center}
 \subimport{plots/}{Steps.tex}
 \end{center}\vskip-18pt
-\caption{Steps taken to determine whether students have received unauthorised assistance on assignments.}
+\caption{Steps taken to determine whether students have received unauthorised assistance on assignments.\label{fig:Plagiarise}}
 \end{figure}
 \par
-The questionnaire asked about the resources in terms of examples, books etc. provided to students. 
+The questionnaire asked about the resources in terms of examples, books etc. provided to students. The results are rather similar to \cite[Figure 14]{mason+cooper:2014} so we do not repeat that here: details are in the full paper.
+\par
+Conversely, \cite{mason+cooper:2014} asked about {\bf @Ellen: exact question please} but didn't give the results  in their paper. We report our results in Figure \ref{fig:Plagiarise}, as we think they are of general interest. 
 %\begin{figure}
 %\begin{center}
 %\subimport{plots/}{Resources.tex}
@@ -316,7 +319,9 @@ The questionnaire asked about the resources in terms of examples, books etc. pro
 \subsection{The U.K. context}
 
 \subsection{Comparison with Australasia}
-Here we compare with \cite{mason+cooper:2014}, the latest Australasian survey. We have already commented on the major difference in language choice,  which colours many of the other comparisons. Another difference shows up in Figure \ref{fig:tools} versus \cite{mason+cooper:2014}'s Figure 11. There, ``None'' and ``Other'' were the top two categories, with Idle, at 15\%, the most popular named product. In the UK, ``Other'' is fifth and Idle seventh.
+Here we compare with \cite{mason+cooper:2014}, the latest Australasian survey. We have already commented on the major difference in language choice,  which colours many of the other comparisons. n fact, the U.K.'s language choices seem more similar to Australasia's 2010 choices \cite{mason-et-al:2012} and \cite[Table 4]{mason+cooper:2014} than even Australasia's 2013 choices. It is hard to know which comes first, but we also notice that our difficulty/utility data (Figure \ref{fig:utility}) is somewhat different from \cite[Figures 7,8]{mason+cooper:2014}
+
+Another difference shows up in Figure \ref{fig:tools} versus \cite{mason+cooper:2014}'s Figure 11. There, ``None'' and ``Other'' were the top two categories, with Idle, at 15\%, the most popular named product. In the UK, ``Other'' is fifth and Idle seventh, with no ``None'' @Ellen: is that right?.
 
 
 \section{Acknowledgements}
