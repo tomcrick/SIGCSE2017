@@ -54,19 +54,23 @@ James H. Davenport\\
 \maketitle
 
 \begin{abstract}
-This paper reports the results of a survey of over70 introductory
+This paper reports the results of a survey of over 70 introductory
 programming courses delivered at UK universities as part of their
 first year computer science (or similar) degree programmes, conducted
 in the first half of 2016. Results of this survey are compared with a
 related survey conducted since 2010 (as well as earlier surveys from
-2001 and 2003) on universities in Australia and New Zealand. Trends in
+2001 and 2003) at universities in Australia and New Zealand. Trends in
 student numbers, programming paradigm, programming languages and
 environment/tools used, as well as the reasons for choice of such are
 reported. Other aspects of first programming courses such as
 instructor experience, external delivery of courses and resources
 given to students are also examined.
 
-The results indicate a trend towards...
+The results in this first UK survey indicate a trend towards...
+
+...especially in the context of substantial computer science
+curriculum reform in UK schools, as well as increasingly scrutiny of
+teaching excellence and graduate employability for UK universities.
 \end{abstract}
 
 % check these...do we need keywords too?
@@ -103,8 +107,8 @@ computer science instructors have not had access to comprehensive
 surveys of research in this
 area~\cite{mccracken-et-al:2001,pears-et-al:2007}.
 
-However, in Australasia there has been substantial longitudinal data
-collection~\cite{deraadt-et-al:2004,mason-et-al:2012,mason+cooper:2014}
+However, in Australia and New Zealand there has been longitudinal data
+collections~\cite{deraadt-et-al:2004,mason-et-al:2012,mason+cooper:2014}
 surveying the teaching of introductory programming courses in higher
 education. However, such surveys have not been conducted elsewhere on
 this scale, and this paper reports the findings from running the first
@@ -115,12 +119,13 @@ ruled by one parliament, with an overall population of 64.5 million:
 England (population: 54.3 million), Scotland (5.3 million), Wales (3.1
 million) and Northern Ireland (1.8 million)~\cite{onspop:2016}. In
 1997, Scotland and Wales held referendums which determined in both
-cases the desire for self-government, with the creation of assemblies
-to which a variety of powers -- in particular, education -- were
-devolved from the UK Parliament. In the context of international focus
-on curriculum and qualification reform to support computer science
-education and digital skills in schools, the four education systems of
-the UK have proposed and implemented a variety of
+cases the desire for self-government (along with Northern Ireland and
+the 1998 Good Friday Agreement), creating assemblies to which a
+variety of powers -- in particular, education -- were devolved from
+the UK Parliament. In the context of international focus on curriculum
+and qualification reform to support computer science education and
+digital skills in schools, the four education systems of the UK have
+proposed and implemented a variety of
 changes~\cite{rs:2012,brown-et-al-toce2014}, particular in England,
 with a new compulsory computing curriculum for ages 5-16 from
 September 2014.
@@ -134,7 +139,7 @@ zero to four or five years experience (and potentially two school
 qualifications) in computer science with some knowledge of
 programming.
 
-% correct time frame?
+% appropriate time frame?
 Over the past three years, there has been increased scrutiny of the
 quality of teaching in UK universities, partly linked to the current
 levels -- and potential future increases -- of tuition fees (generally
@@ -146,17 +151,50 @@ Education Funding Council for England (HEFCE) initiated independent
 reviews of STEM degree accreditation and graduate
 employability\footnote{\url{https://www.gov.uk/government/collections/graduate-employment-and-accreditation-in-stem-independent-reviews}},
 with a specific review -- the Shadbolt review~\cite{shadbolt:2016} --
-focusing on computer science degree accreditation and graduate
-employability, reporting back in May 2016. Alongside a number of
-recommendations, the Shadbolt review split generalist universities in
+focusing on computer science degree accreditation (in this case, with
+BCS, The Chartered Institute for IT) and graduate employability,
+reporting back in May 2016. Alongside a number of recommendations to
+address the relatively high unemployment rates of computer sciences
+graduates, particular on quality of data, course types, gender and
+demographics, the Shadbolt review split generalist universities in
 England into three bands, based on their average (across all subjects)
 entrance tariff (qualifications of entrants); we have followed that
 banding during our analysis the English results, so our data should
 allow comparisons.
 
 % should we mention TEF?
+Alongside this increased scrutiny of standards and outputs for
+computer science degrees in UK universities, a Teaching Excellence
+Framework\footnote{\url{http://www.hefce.ac.uk/lt/tef/}} has been
+proposed as part of proposed new higher education legislation. The
+core ambition of the framework is ``to raise the quality and status of
+teaching in higher education institutions''; excellence is to be
+measured through a series of proxy metrics that include student
+satisfaction, retention and graduate employability. There has been
+significant concerns about the aims of the framework, as well as the
+suitability of the metrics; more so in the context of it benchmarking
+and creating leagues tables for ``teaching excellence'', as well as
+deciding whether institutions are allowed to raise tuition fees in the
+future. The UK's Higher Education Academy -- the national body which
+champions teaching quality -- has previously supported initiatives for
+improving learning \& teaching in computer science, including
+innovative pedagogies for
+programming~\cite{crick-et-al-hea:2015,davenport-et-al:latice2016},
+but we have not seen the desired cascading of best practice and wider
+national impact.
+% should we mention HEA and our work?
 
-%Also, our previous work~\cite{crick-et-al-hea:2015,davenport-et-al:latice2016}.
+In this emerging environment of policy, curricula, pedagogy and the
+evolving demands of high-quality learning \& teaching for computer
+science degree programmes, we present the findings from the first
+national scale survey of introductory programming languages at UK
+universities. Through this survey, we identify and analyse trends in
+student numbers, programming paradigm, programming languages and
+environment/tools used, as well as the reasons for choice of such are
+reported. Other aspects of first programming courses such as
+instructor experience, external delivery of courses and resources
+given to students are also examined, along with comparisons to the
+original Australasian surveys.
 
 \section{Methodology}\label{method}
 
@@ -166,13 +204,13 @@ To recruit participants for the survey, a general invitation email was
 sent to the Council of Professors and Heads of Computing (CPHC)
 mailing list. CPHC have members from over 100 UK universities, and are
 the representational body for this group in the
-UK\footnote{\texttt{https://cphc.ac.uk/who-we-are/}}.The invitation
+UK\footnote{\url{https://cphc.ac.uk/who-we-are/}}.The invitation
 asked for the survey to be passed on to the most appropriate person to
-fill it out; Director of Studies, Chair of Teaching Committee or the
+complete it; Director of Studies, Chair of Teaching Committee or the
 best fit for the individual institution. A couple of reminder circular
-e-mails were also issued.
+emails were also issued.
 
-The survey was hosted online, and was open from mid-May until the end
+The survey was hosted online and was open from mid-May until the end
 of June 2016, at which point it was closed and the results were
 downloaded and analysed. Due to the recruitment method, there were
 duplicate responses from some departments, and these were reconciled
