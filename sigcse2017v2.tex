@@ -59,7 +59,7 @@ programming courses delivered at UK universities as part of their
 first year computer science (or similar) degree programmes, conducted
 in the first half of 2016. Results of this survey are compared with a
 related survey conducted since 2010 (as well as earlier surveys from
-2001 and 2003) at universities in Australia and New Zealand. Trends in
+2001 and 2003)  in Australia and New Zealand. Trends in
 student numbers, programming paradigm, programming languages and
 environment/tools used, as well as the reasons for choice of such are
 reported. Other aspects of first programming courses such as
@@ -118,7 +118,7 @@ We remind the reader that the UK consists of four nations historically
 ruled by one parliament, with an overall population of 64.5 million:
 England (population: 54.3 million), Scotland (5.3 million), Wales (3.1
 million) and Northern Ireland (1.8 million)~\cite{onspop:2016}. In
-1997, Scotland and Wales held referendums which determined in both
+1997, Scotland and Wales held referenda which determined in both
 cases the desire for self-government (along with Northern Ireland and
 the 1998 Good Friday Agreement), creating assemblies to which a
 variety of powers -- in particular, education -- were devolved from
@@ -143,11 +143,12 @@ programming.
 Over the past three years, there has been increased scrutiny of the
 quality of teaching in UK universities, partly linked to the current
 levels -- and potential future increases -- of tuition fees (generally
-paid by the student though government-supported loans), as well as the
+paid by the student through government-supported loans), as well as the
 perceived value of professional body accreditation and graduate
 employability, especially for STEM disciplines. In February 2015, the
-UK Department of Business, Innovation \& Skills and the Higher
-Education Funding Council for England (HEFCE) initiated independent
+UK Department of Business, Innovation \& Skills 
+%and the Higher Education Funding Council for England (HEFCE)   & JHD: BIS ordered HEFCE, so what's the point?
+initiated independent
 reviews of STEM degree accreditation and graduate
 employability\footnote{\url{https://www.gov.uk/government/collections/graduate-employment-and-accreditation-in-stem-independent-reviews}},
 with a specific review -- the Shadbolt review~\cite{shadbolt:2016} --
@@ -162,6 +163,7 @@ entrance tariff (qualifications of entrants); we have followed that
 banding during our analysis the English results, so our data should
 allow comparisons.
 
+\iffalse
 % should we mention TEF?
 Alongside this increased scrutiny of standards and outputs for
 computer science degrees in UK universities, a Teaching Excellence
@@ -183,6 +185,7 @@ programming~\cite{crick-et-al-hea:2015,davenport-et-al:latice2016},
 but we have not seen the desired cascading of best practice and wider
 national impact.
 % should we mention HEA and our work?
+\fi 
 
 In this emerging environment of policy, curricula, pedagogy and the
 evolving demands of high-quality learning \& teaching for computer
@@ -192,10 +195,31 @@ universities. Through this survey, we identify and analyse trends in
 student numbers, programming paradigm, programming languages and
 environment/tools used, as well as the reasons for choice of such are
 reported. Other aspects of first programming courses such as
-instructor experience, external delivery of courses and resources
+instructor experience, %external delivery of courses: there was none, so irrelevant
+and resources
 given to students are also examined, along with comparisons to the
-original Australasian surveys.
+ Australasian surveys.
 
+\begin{figure}
+\begin{center}
+\subimport{plots/}{tariffGroupCompare.tex}\vskip-12pt
+\caption{The number of responding universities per Nation/   
+ Tariff Group.\label{fig:TG}}
+\end{center}
+\end{figure}
+
+%\subsection{Student Numbers}
+%??
+\begin{table}[]
+\centering
+\caption{The number of programming languages used in first programming courses.}
+\label{tab:numLanguages}
+\begin{tabular}{ccccc}
+\hline
+Languages & 1  & 2  & 3 & 4 \\ \hline
+Courses   & 59 & 17 & 3 & 1 \\ \hline
+\end{tabular}
+\end{table}
 \section{Methodology}\label{method}
 
 \subsection{Recruitment of Participants}
@@ -215,6 +239,12 @@ of June 2016, at which point it was closed and the results were
 downloaded and analysed. Due to the recruitment method, there were
 duplicate responses from some departments, and these were reconciled
 by direct enquiry.
+\begin{figure}
+\begin{center}
+\subimport{plots/}{langPercentCompare.tex}
+\end{center}\vskip-12pt
+\caption{Language popularity by percentage of courses and students (excl. OU).\label{fig:lang}}
+\end{figure}
 
 \subsection{Questions}
 
@@ -267,6 +297,14 @@ results presented here are drawn from the responses of 80 instructors
 from at least 70 universities. Some participants did not answer all
 questions and due to this the response rate varies by question.
 
+
+\begin{figure}
+\begin{center}
+\subimport{plots/}{reasonsByCourseCompare.tex}
+\end{center}\vskip-18pt
+\caption{Reasons given for choosing a programming language by percentage for: all languages; Java; and Python.\label{fig:reasons}}
+\end{figure}
+\par
 Excluding the Open University's 3200 students, the participants in the
 survey represented 13462 students, with a mean of 173 (but a standard
 deviation of 88). Looking at Figure \ref{fig:TG} we see good response
@@ -276,34 +314,6 @@ computing, % e.g. all the 'arts' ones but we are not convinced that
 this factor alone explains the response rate. In Northern Ireland, we
 had responses from the two universities, but not the university
 colleges, which are historically teacher-training colleges.
-
-\begin{figure}
-\begin{center}
-\subimport{plots/}{tariffGroupCompare.tex}\vskip-12pt
-\caption{The number of responding universities per Nation/   
- Tariff Group.\label{fig:TG}}
-\end{center}
-\end{figure}
-
-%\subsection{Student Numbers}
-%??
-\begin{table}[]
-\centering
-\caption{The number of programming languages used in first programming courses.}
-\label{tab:numLanguages}
-\begin{tabular}{ccccc}
-\hline
-Languages & 1  & 2  & 3 & 4 \\ \hline
-Courses   & 59 & 17 & 3 & 1 \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{figure}
-\begin{center}
-\subimport{plots/}{langPercentCompare.tex}
-\end{center}\vskip-12pt
-\caption{Language popularity by percentage of courses and students (excl. OU).\label{fig:lang}}
-\end{figure}
 
 \subsection{Languages}
 
@@ -322,13 +332,6 @@ distorted the comparison.
 
 % ~\cite{guo:2014} -- US universities and Python being the most popular
 
-\begin{figure}
-\begin{center}
-\subimport{plots/}{reasonsByCourseCompare.tex}
-\end{center}
-\caption{Reasons given for choosing a programming language by percentage for: all languages; Java; and Python.\label{fig:reasons}}
-\end{figure}
-%\par
 
 Figure~\ref{fig:reasons} shows some of the reasons for this: Java
 scores higher on ``relevance to industry'' and, perhaps somewhat
@@ -352,14 +355,14 @@ high tariff universities.
 \begin{figure}
 \begin{center}
 \subimport{plots/}{langByTariffPercent.tex}
-\end{center}
+\end{center}%\vskip-12pt  JHD: Oddly, this vskip seems counterproductive
 %\caption{The breakdown of programming languages for each of the Tariff Groups.}
 %\end{figure}
 %
 %\begin{figure}
 \begin{center}
 \subimport{plots/}{TariffByLangPercent.tex}
-\end{center}
+\end{center}\vskip-18pt
 \caption{The breakdown of programming languages by Nation and Tariff Groups.\label{fig;LangTariff}}
 \end{figure}
 
@@ -376,10 +379,10 @@ Courses  & 40              & 27         & 7          \\ \hline
 
 %\clearpage
 
-\begin{figure}
+\begin{figure}\vskip-12pt
 \begin{center}
 \subimport{plots/}{paradigmByTariffPercent.tex}
-\end{center}
+\end{center}\vskip-18pt
 \caption{The breakdown of the main paradigm in use for every Tariff Group.}
 \end{figure}
 
