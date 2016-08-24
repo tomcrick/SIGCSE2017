@@ -69,7 +69,7 @@ given to students are also examined.
 The results indicate a trend towards...
 \end{abstract}
 
-% check these...
+% check these...do we need keywords too?
 % A category with the (minimum) three required fields
 \category{K.3.2}{Computers \& Education}{Computer and Information Science Education}[Computer Science Education]
 \category{K.4.1}{Computers And Society}{Public Policy Issues}
@@ -79,51 +79,166 @@ The results indicate a trend towards...
 
 \section{Introduction}\label{intro}
 
-\cite{mason+cooper:2014} is the latest in a long line \cite{deraadt-et-al:2004,mason-et-al:2012} of papers surveying the teaching of introductory programming courses in Australasia. However, such surveys are not the norm elsewhere, and this paper reports the authors' findings from running the first such survey in the United Kingdom. We remind the reader that in the United Kingdom (2011 census population 63.2 million), %\cite{Census} 
-Higher Education is the responsibility of the Westminster Goverment in England (53 million) and of the devolved goverments in Scotland (5.3 million), Wales (3.1 million) and Northern Ireland (1.8 million).
+For many years -- and increasingly at all levels of compulsory and
+post-compulsory education -- the choice of programming language to
+introduce basic programming principles, constructs, syntax and
+semantics has been regularly revisited. Even in the context of what
+are perceived to be the most difficult introductory topics in computer
+science degrees, numerous key themes across programming
+appear~\cite{dale:2006}. 
 
-UK policy context
-e.g. schools~\cite{brown-et-al-sigcse2013,brown-et-al-toce2014},
-Shadbolt/Wakeham,
-The Shadbolt enquiry split generalist universities in England in three bands, based on their average (across all subjects) entrance tariff (qualifications of entrants), and we have followed that banding when we split the English results, so our data should be comparable with \cite{shadbolt:2016}
+So what is a good first programming language? The issues surrounding
+choosing a first language~\cite{gupta:2004,kaplan:2010} -- and a
+search of the ACM Digital Library identified a number of papers of the
+form ``{\emph{X as a first programming language}}'', going as far back
+as the 1980s -- as well as the potential impact on students' grades
+and attainment~\cite{ivanovic-et-al:2015}.
 
- TEF, graduate employability, etc.
+Decades of research on the teaching of introductory programming has
+had limited effect on classroom practice~\cite{pears-et-al:2007};
+although relevant research exists across several disciplines including
+education and cognitive science, disciplinary differences have made
+this material inaccessible to many computing educators. Furthermore,
+computer science instructors have not had access to comprehensive
+surveys of research in this
+area~\cite{mccracken-et-al:2001,pears-et-al:2007}.
 
-Other work in this
-space~\cite{mccracken-et-al:2001,gupta:2004,dale:2006,pears-et-al:2007,guo:2014}
+However, in Australasia there has been substantial longitudinal data
+collection~\cite{deraadt-et-al:2004,mason-et-al:2012,mason+cooper:2014}
+surveying the teaching of introductory programming courses in higher
+education. However, such surveys have not been conducted elsewhere on
+this scale, and this paper reports the findings from running the first
+such similar survey in the UK.
 
-Also, our previous work~\cite{crick-et-al-hea:2015,davenport-et-al:latice2016}.
+We remind the reader that the UK consists of four nations historically
+ruled by one parliament, with an overall population of 64.5 million:
+England (population: 54.3 million), Scotland (5.3 million), Wales (3.1
+million) and Northern Ireland (1.8 million)~\cite{onspop:2016}. In
+1997, Scotland and Wales held referendums which determined in both
+cases the desire for self-government, with the creation of assemblies
+to which a variety of powers -- in particular, education -- were
+devolved from the UK Parliament. In the context of international focus
+on curriculum and qualification reform to support computer science
+education and digital skills in schools, the four education systems of
+the UK have proposed and implemented a variety of
+changes~\cite{rs:2012,brown-et-al-toce2014}, particular in England,
+with a new compulsory computing curriculum for ages 5-16 from
+September 2014.
 
-%Hat tip to the Australian work~\cite{deraadt-et-al:2004,mason-et-al:2012,mason+cooper:2014}. DONE, JHD thinks
+For universities across the UK offering computer science degrees, this
+curriculum reform in schools has had uncertain (and emerging) impact
+on their undergraduate programmes, with the diversity of educational
+background of applicants likely to be increasing before it narrows: it
+is certainly possible for prospective students to have anywhere from
+zero to four or five years experience (and potentially two school
+qualifications) in computer science with some knowledge of
+programming.
+
+% correct time frame?
+Over the past three years, there has been increased scrutiny of the
+quality of teaching in UK universities, partly linked to the current
+levels -- and potential future increases -- of tuition fees (generally
+paid by the student though government-supported loans), as well as the
+perceived value of professional body accreditation and graduate
+employability, especially for STEM disciplines. In February 2015, the
+UK Department of Business, Innovation \& Skills and the Higher
+Education Funding Council for England (HEFCE) initiated independent
+reviews of STEM degree accreditation and graduate
+employability\footnote{\url{https://www.gov.uk/government/collections/graduate-employment-and-accreditation-in-stem-independent-reviews}},
+with a specific review -- the Shadbolt review~\cite{shadbolt:2016} --
+focusing on computer science degree accreditation and graduate
+employability, reporting back in May 2016. Alongside a number of
+recommendations, the Shadbolt review split generalist universities in
+England into three bands, based on their average (across all subjects)
+entrance tariff (qualifications of entrants); we have followed that
+banding during our analysis the English results, so our data should
+allow comparisons.
+
+% should we mention TEF?
+
+%Also, our previous work~\cite{crick-et-al-hea:2015,davenport-et-al:latice2016}.
 
 \section{Methodology}\label{method}
 
 \subsection{Recruitment of Participants}
 
-To recruit participants for the survey, a general invitation email was sent to the Council of Professors and Heads of Computing (CPHC) mailing list. CPHC have members from over 100 UK universities, and are the representational body for this group in the UK\footnote{\texttt{https://cphc.ac.uk/who-we-are/}}.The invitation asked for the survey to be passed on to the most appropriate person to fill it out; Director of Studies, Chair of Teaching Committee or the best fit for the individual institution. A couple of reminder circular e-mails were also issued.
+To recruit participants for the survey, a general invitation email was
+sent to the Council of Professors and Heads of Computing (CPHC)
+mailing list. CPHC have members from over 100 UK universities, and are
+the representational body for this group in the
+UK\footnote{\texttt{https://cphc.ac.uk/who-we-are/}}.The invitation
+asked for the survey to be passed on to the most appropriate person to
+fill it out; Director of Studies, Chair of Teaching Committee or the
+best fit for the individual institution. A couple of reminder circular
+e-mails were also issued.
 
-The survey was hosted online, and was open from mid-May until the end of June 2016, at which point it was closed and the results were downloaded and analysed. Due to the recruitment method, there were duplicate responses from some departments, and these were reconciled by direct enquiry.
+The survey was hosted online, and was open from mid-May until the end
+of June 2016, at which point it was closed and the results were
+downloaded and analysed. Due to the recruitment method, there were
+duplicate responses from some departments, and these were reconciled
+by direct enquiry.
+
 \subsection{Questions}
 
-The questions used in the survey were generously provided by the authors of~\cite{mason+cooper:2014}, so as to allow direct comparison between the results of this survey and that of the Australian/New Zealand 2014 survey. Where possible, questions were left unchanged, although a small minority were edited to reflect the UK target audience. 
+The questions used in the survey were generously provided by the
+authors of~\cite{mason+cooper:2014}, so as to allow direct comparison
+between the results of this survey and that of the Australian/New
+Zealand 2014 survey. Where possible, questions were left unchanged,
+although a small minority were edited to reflect the UK target
+audience. 
 
-As written in~\cite{mason+cooper:2014}, text in the survey made clear that the terminology ``course'' was used for ``the basic unit of study that is completed by students towards a degree, usually studied over a period pf a semester or session, in conjunction with other units of study''. 
+As defined in~\cite{mason+cooper:2014}, text in the survey made clear
+that the terminology ``course'' was used for ``the basic unit of study
+that is completed by students towards a degree, usually studied over a
+period pf a semester or session, in conjunction with other units of
+study''.
 
-The first section of the survey asked about the programming language(s) in use, the reasons for their choice, and the perceived difficulty and usefulness of the programming language(s). Following this were questions regarding the use of environments or development tools; which ones were used, the reasons for their choice and the perceived difficulty. General questions about paradigm, instructor experience and external delivery were asked, along with questions regarding students receiving unauthorised assistance, and the resources provided to students. Finally, participants were asked to identify their top three main aims when teaching introductory programming, and were also allowed to provide further comments. 
+The first section of the survey asked about the programming
+language(s) in use, the reasons for their choice, and the perceived
+difficulty and usefulness of the programming language(s). Following
+this were questions regarding the use of environments or development
+tools; which ones were used, the reasons for their choice and the
+perceived difficulty. General questions about paradigm, instructor
+experience and external delivery were asked, along with questions
+regarding students receiving unauthorised assistance, and the
+resources provided to students. Finally, participants were asked to
+identify their top three main aims when teaching introductory
+programming, and were also allowed to provide further comments.
 
 % @James: I checked the paper - they could rank all reasons, not just top three.
-In~\cite{mason+cooper:2014}, participants were asked to rank the importance of the given reasons for choosing a programming language, environment or tool. Due to technical limitations in online survey tool used, it was not possible to do so in this survey, so our Figure~\ref{fig:reasons} just reports counts.
+In~\cite{mason+cooper:2014}, participants were asked to rank the
+importance of the given reasons for choosing a programming language,
+environment or tool. Due to technical limitations in online survey
+tool used, it was not possible to do so in this survey, so our
+Figure~\ref{fig:reasons} just reports counts.
 
-Most questions were not mandatory; the exceptions were ``what programming language(s) are in use?'' and a small number of feeder questions to allow the survey to function correctly.
+Most questions were not mandatory; the exceptions were ``what
+programming language(s) are in use?'' and a small number of feeder
+questions to allow the survey to function correctly.
 
 \section{Results and Discussion}\label{results}
 
 \subsection{Universities and Courses}
-%JHD: we need some discussion of response rates, either here or via Figure 1 also showing response rates, as in e-mail to Ellen
-Upon completion of the survey, 155 instructors had, at least, started the survey. Sixty-one of these dropped out before answering the mandatory questions, and a further 14 were duplicates. Therefore, the results presented here are drawn from the responses of 80 instructors from at least 70 universities. Some participants did not answer all questions and due to this the response rate varies by question.
+%JHD: we need some discussion of response rates, either here or via
+%Figure 1 also showing response rates, as in e-mail to Ellen
 
-Excluding the Open University's 3200 students, the participants in the survey represented 13462 students, with a mean of 173 (but a standard deviation of 88). Looking at Figure \ref{fig:TG} we see good response rates, apart from the specialist HEIs (most of whom do not teach computing) and the ``low tariff'' English ones. Fewer of these teach computing, % e.g. all the 'arts' ones
-but we are not convinced that this factor alone explains the response rate. In Northern Ireland, we had responses from the two universities, but not the university colleges, which are historically teacher-training colleges.
+Upon completion of the survey, 155 instructors had, at least, started
+the survey. Sixty-one of these dropped out before answering the
+mandatory questions, and a further 14 were duplicates. Therefore, the
+results presented here are drawn from the responses of 80 instructors
+from at least 70 universities. Some participants did not answer all
+questions and due to this the response rate varies by question.
+
+Excluding the Open University's 3200 students, the participants in the
+survey represented 13462 students, with a mean of 173 (but a standard
+deviation of 88). Looking at Figure \ref{fig:TG} we see good response
+rates, apart from the specialist HEIs (most of whom do not teach
+computing) and the ``low tariff'' English ones. Fewer of these teach
+computing, % e.g. all the 'arts' ones but we are not convinced that
+this factor alone explains the response rate. In Northern Ireland, we
+had responses from the two universities, but not the university
+colleges, which are historically teacher-training colleges.
+
 \begin{figure}
 \begin{center}
 \subimport{plots/}{tariffGroupCompare.tex}\vskip-12pt
@@ -151,8 +266,23 @@ Courses   & 59 & 17 & 3 & 1 \\ \hline
 \end{center}\vskip-12pt
 \caption{Language popularity by percentage of courses and students (excl. OU).\label{fig:lang}}
 \end{figure}
+
 \subsection{Languages}
-This is the immediate major difference with \cite{mason+cooper:2014}. Their survey showed a dead heat (27.3\% of courses) between Java and Python, with Python winning (33.7\% to 26.9\%) when weighted by the number of students on the course.  Our findings  (Figure \ref{fig:lang}) show that Java is a clear winner by any metric, being used in just under half the courses, while the runner-up, Python, is in use in  13.2\%. The C family (C, C++ and C\#) together scores 23.6\% by courses and 19.5\% by students. Figure \ref{fig:lang} shows the effect of student-number weighting \emph{but} we have excluded the Open University from this weighting, as its 3200 students learning Python (and Sense, a variant of Scratch) would have distorted the comparison.
+
+This is the immediate major difference with
+\cite{mason+cooper:2014}. Their survey showed a dead heat (27.3\% of
+courses) between Java and Python, with Python winning (33.7\% to
+26.9\%) when weighted by the number of students on the course.  Our
+findings (Figure \ref{fig:lang}) show that Java is a clear winner by
+any metric, being used in just under half the courses, while the
+runner-up, Python, is in use in 13.2\%. The C family (C, C++ and C\#)
+together scores 23.6\% by courses and 19.5\% by students. Figure
+\ref{fig:lang} shows the effect of student-number weighting \emph{but}
+we have excluded the Open University from this weighting, as its 3200
+students learning Python (and Sense, a variant of Scratch) would have
+distorted the comparison.
+
+% ~\cite{guo:2014} -- US universities and Python being the most popular
 
 \begin{figure}
 \begin{center}
@@ -160,10 +290,18 @@ This is the immediate major difference with \cite{mason+cooper:2014}. Their surv
 \end{center}
 \caption{Reasons given for choosing a programming language by percentage for: all languages; Java; and Python.\label{fig:reasons}}
 \end{figure}
-\par
-Figure \ref{fig:reasons} shows some of the reasons for this: Java scores higher on ``relevance to industry'' and, perhaps somewhat surprisingly, much higher on ``Object Oriented language''.  @Tom: do you agree with ``somewhat surprisingly''?
+%\par
 
-Figure \ref{fig;LangTariff} breaks down the choice of language by nation and tariff group.  It is noticeable that the three English tariff groups differ significantly, with Python outnumbering Java in the low tariff universities, and C being almost exclusively in the high tariff universities.
+Figure~\ref{fig:reasons} shows some of the reasons for this: Java
+scores higher on ``relevance to industry'' and, perhaps somewhat
+surprisingly, much higher on ``Object Oriented language''.
+% @Tom: do you agree with ``somewhat surprisingly''?
+
+Figure~\ref{fig;LangTariff} breaks down the choice of language by
+nation and tariff group.  It is noticeable that the three English
+tariff groups differ significantly, with Python outnumbering Java in
+the low tariff universities, and C being almost exclusively in the
+high tariff universities.
 
 \begin{figure}
 \begin{center}
@@ -187,7 +325,6 @@ Figure \ref{fig;LangTariff} breaks down the choice of language by nation and tar
 \caption{The breakdown of programming languages by Nation and Tariff Groups.\label{fig;LangTariff}}
 \end{figure}
 
-
 \begin{table}[]
 \centering
 \caption{The main paradigm in use in the first programming course.}
@@ -199,7 +336,7 @@ Courses  & 40              & 27         & 7          \\ \hline
 \end{tabular}
 \end{table}
 
-\clearpage
+%\clearpage
 
 \begin{figure}
 \begin{center}
@@ -241,8 +378,13 @@ Years       & \textless 2 & 2 - 5 & 5 - 10 & 10 - 20 & 20 - 30 & \textgreater 30
 Instructors & 3          & 9     & 9      & 27      & 19      & 7              \\ \hline
 \end{tabular}
 \end{table}
+
 \subsection{Instructor Experience}
-Participants were asked: ``How many years have you been involved in teaching of introductory programming?''. The results, shown in Table~\ref{tab:yearsTeaching}, indicate that of the survey participants, the average was between 10 - 20 years.
+
+Participants were asked: ``How many years have you been involved in
+teaching of introductory programming?''. The results, shown in
+Table~\ref{tab:yearsTeaching}, indicate that of the survey
+participants, the average was between 10 - 20 years.
 
 \begin{table}[]
 \centering
@@ -261,8 +403,15 @@ Courses & 34 & 15 & 6 & 2 & 1 \\ \hline
 \caption{Tool or environment popularity by percentage of courses and students.\label{fig:tools}}
 \end{center}
 \end{figure}
+
 \subsection{IDEs and Tools}
-Various data about IDEs and tools are collected in Figures \ref{fig:tools}--\ref{fig:toolhard}. We note that, while Eclipse is the most popular tool by some way (Figure \ref{fig:tools}), it is also deemed to be most difficult (Figure \ref{fig:toolhard}). This, apparently perverse, practice might be explained by the extent of re-use of Eclipse in other courses (Figure \ref{fig:toolreuse}).
+
+Various data about IDEs and tools are collected in Figures
+\ref{fig:tools}--\ref{fig:toolhard}. We note that, while Eclipse is
+the most popular tool by some way (Figure \ref{fig:tools}), it is also
+deemed to be most difficult (Figure \ref{fig:toolhard}). This,
+apparently perverse, practice might be explained by the extent of
+re-use of Eclipse in other courses (Figure \ref{fig:toolreuse}).
 
 \begin{figure}
 \begin{center}
@@ -294,18 +443,40 @@ Various data about IDEs and tools are collected in Figures \ref{fig:tools}--\ref
 \end{center}\vskip-18pt
 \caption{Steps taken to determine whether students have received unauthorised assistance on assignments.\label{fig:Plagiarise}}
 \end{figure}
-\par
-The questionnaire asked about the resources in terms of examples, books etc. provided to students. The results are rather similar to \cite[Figure 14]{mason+cooper:2014} so we do not repeat that here: details are in the full paper.
-\par
-Conversely, \cite{mason+cooper:2014} asked about {\bf @Ellen: exact question please} but didn't give the results  in their paper. We report our results in Figure \ref{fig:Plagiarise}, as we think they are of general interest. 
+%\par
+
+The questionnaire asked about the resources in terms of examples,
+books etc. provided to students. The results are rather similar to
+\cite[Figure 14]{mason+cooper:2014} so we do not repeat that here:
+details are in the full paper.
+%\par
+
+Conversely, \cite{mason+cooper:2014} asked about {\bf @Ellen: exact
+  question please} but didn't give the results  in their paper. We
+report our results in Figure \ref{fig:Plagiarise}, as we think they
+are of general interest. 
+
 %\begin{figure}
 %\begin{center}
 %\subimport{plots/}{Resources.tex}
 %\end{center}\vskip-18pt
 %\caption{Resources provided to students.}
 %\end{figure}
+
 \subsection{Aims of an Introductory Programming Course}
- \cite{mason+cooper:2014} asked their respondents for the aims of their introductory programming course. They, and we, asked for (up to) three aims. The authors then attempted to classify the free-text answers into the same categorisation as  \cite{mason+cooper:2014} used. While it is trivial to map the written aim ``Thinking algorithmically'' to \cite{mason+cooper:2014}'s ``Algorithmic thinking'' and so on, many were not so clear: for example, we mapped ``To learn a specific language'' to ``syntax/writing basic code''. There were also a class of aims, such as ``Establish professional software development practices'', that seemed very coherent, but didn't map clearly to the \cite{mason+cooper:2014} aims. These we have categorised as ``Software Engineering''.
+
+ \cite{mason+cooper:2014} asked their respondents for the aims of
+their introductory programming course. They, and we, asked for (up to)
+three aims. The authors then attempted to classify the free-text
+answers into the same categorisation as \cite{mason+cooper:2014}
+used. While it is trivial to map the written aim ``Thinking
+algorithmically'' to \cite{mason+cooper:2014}'s ``Algorithmic
+thinking'' and so on, many were not so clear: for example, we mapped
+``To learn a specific language'' to ``syntax/writing basic
+code''. There were also a class of aims, such as ``Establish
+professional software development practices'', that seemed very
+coherent, but didn't map clearly to the \cite{mason+cooper:2014}
+aims. These we have categorised as ``Software Engineering''.
 
 \begin{figure}
 \begin{center}
@@ -319,19 +490,34 @@ Conversely, \cite{mason+cooper:2014} asked about {\bf @Ellen: exact question ple
 \subsection{The U.K. context}
 
 \subsection{Comparison with Australasia}
-Here we compare with \cite{mason+cooper:2014}, the latest Australasian survey. We have already commented on the major difference in language choice,  which colours many of the other comparisons. n fact, the U.K.'s language choices seem more similar to Australasia's 2010 choices \cite{mason-et-al:2012} and \cite[Table 4]{mason+cooper:2014} than even Australasia's 2013 choices. It is hard to know which comes first, but we also notice that our difficulty/utility data (Figure \ref{fig:utility}) is somewhat different from \cite[Figures 7,8]{mason+cooper:2014}
 
-Another difference shows up in the tools/enviroments are: Figure \ref{fig:tools} versus \cite{mason+cooper:2014}'s Figure 11. There, ``None'' and ``Other'' were the top two categories, with Idle, at 15\%, the most popular named product. In the UK, ``Other'' is fifth and Idle seventh, with no ``None'' @Ellen: is that right?.
+Here we compare with \cite{mason+cooper:2014}, the latest Australasian
+survey. We have already commented on the major difference in language
+choice, which colours many of the other comparisons. n fact, the
+U.K.'s language choices seem more similar to Australasia's 2010
+choices \cite{mason-et-al:2012} and \cite[Table 4]{mason+cooper:2014}
+than even Australasia's 2013 choices. It is hard to know which comes
+first, but we also notice that our difficulty/utility data (Figure
+\ref{fig:utility}) is somewhat different from \cite[Figures
+7,8]{mason+cooper:2014}
+
+Another difference shows up in the tools/enviroments are: Figure
+\ref{fig:tools} versus \cite{mason+cooper:2014}'s Figure 11. There,
+``None'' and ``Other'' were the top two categories, with Idle, at
+15\%, the most popular named product. In the UK, ``Other'' is fifth
+and Idle seventh, with no ``None'' @Ellen: is that right?.
 
 
 \section{Acknowledgements}
 
 The authors would like to thank the participants for their engagement
-with the survey, as well as the authors of [8] for providing us with their survey and permission to use it.
+with the survey, as well as the authors of [8] for providing us with
+their survey and permission to use it.
 % HEFCE? I think we should in the final version, but leave them out for now.
 % CPHC? Not really
 % GW4 - JHD has asked what the form of words should be.
-We are grateful to the GW4 Alliance (Universities of Bath, Bristol, Cardiff and Exeter) for funding the underpinning survey.
+We are grateful to the GW4 Alliance (Universities of Bath, Bristol,
+Cardiff and Exeter) for funding the underpinning survey.
 % bib
 \bibliographystyle{abbrv}
 \bibliography{sigcse2017}
