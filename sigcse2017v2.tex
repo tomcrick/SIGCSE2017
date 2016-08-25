@@ -118,20 +118,20 @@ We remind the reader that the UK consists of four nations (with an
 overall population of 64.5 million: England: 54.3 million, Scotland:
 5.3 million, Wales: 3.1 million and Northern Ireland: 1.8 million)
 historically ruled by one parliament, but now with devolved assemblies
-all responsible for four separate education systems. In the context of
+responsible for four separate education systems. In the context of
 increasing international focus on curriculum and qualification reform
 to support computer science education and digital skills in schools,
 the four education systems of the UK have proposed and implemented a
 variety of changes~\cite{rs:2012,brown-et-al-toce2014}, particular in
 England, with a new compulsory computing curriculum for ages 5-16 from
 September 2014. For universities across the UK offering computer
-science degrees, this curriculum reform in schools has had uncertain
-(and emerging) impact on their undergraduate programmes, with the
-diversity of educational background of applicants likely to be
-increasing before it narrows: it is certainly possible for prospective
-students to have anywhere from zero to four or five years experience
-(and potentially two school qualifications) in computer science with
-some knowledge of programming.
+science degrees, this school curriculum reform has had uncertain
+(and emerging) impact on the delivery of their undergraduate
+programmes, with the diversity of educational background of applicants
+likely to increase before it narrows: it is certainly possible now for
+prospective students to have anywhere from zero to four or five years
+experience (and potentially two school qualifications) in computer
+science with some knowledge of programming.
 
 % In 1997, Scotland and Wales held referenda which determined in both
 % cases the desire for self-government (along with Northern Ireland and
@@ -139,21 +139,20 @@ some knowledge of programming.
 % variety of powers -- in particular, education -- were devolved from
 % the UK Parliament.
 
-Over the past few years, there has been increased scrutiny of the
+Over the past few years, there has been increasing scrutiny of the
 quality of teaching in UK universities, partly linked to the current
 levels -- and potential future increases -- of tuition fees (generally
 paid by the student through government-supported loans), as well as
 the perceived value of professional body accreditation and graduate
-employability, especially for STEM disciplines. In February 2015, the
+employability. In February 2015, the
 UK Department of Business, Innovation \& Skills initiated independent
 reviews of STEM degree accreditation and graduate
 employability\footnote{\url{https://www.gov.uk/government/collections/graduate-employment-and-accreditation-in-stem-independent-reviews}},
-with a specific review -- the Shadbolt review~\cite{shadbolt:2016} --
-focusing on computer science degree accreditation (in this case, with
-BCS, The Chartered Institute for IT) and graduate employability,
+with a specific focus -- the Shadbolt review~\cite{shadbolt:2016} --
+on computer science degree accreditation and graduate employability,
 reporting back in May 2016. Alongside a number of recommendations to
 address the relatively high unemployment rates of computer sciences
-graduates, particular on quality of data, course types, gender and
+graduates, particular on the quality of data, course types, gender and
 demographics, the Shadbolt review split generalist universities in
 England into three bands, based on their average (across all subjects)
 entrance tariff (qualifications of entrants); we have followed that
@@ -184,16 +183,20 @@ national impact.
 % should we mention HEA and our work?
 \fi 
 
-In this emerging environment of policy, curricula, pedagogy and the
-evolving demands of high-quality learning \& teaching for computer
+Thus, in this emerging environment of policy, curricula, pedagogy and
+the evolving demands of high-quality learning \& teaching for computer
 science degree programmes, we present the findings from the first
 national scale survey of introductory programming languages at UK
 universities. Through this survey, we identify and analyse trends in
 student numbers, programming paradigm, programming languages and
 environment/tools used, as well as the reasons for choice of such are
-reported. % Other aspects of first programming courses such as
-instructor experience, %external delivery of courses: there was none, so irrelevant
-%and resources given to students are also examined, along with comparisons to the  Australasian surveys.
+reported.
+
+% Other aspects of first programming courses such as instructor
+% experience, 
+%external delivery of courses: there was none, so irrelevant
+%and resources given to students are also examined, 
+% along with comparisons to the  Australasian surveys.
 
 \begin{figure}
 \begin{center}
@@ -204,17 +207,18 @@ instructor experience, %external delivery of courses: there was none, so irrelev
 \end{figure}
 
 %\subsection{Student Numbers}
-%??
-\begin{table}[]
-\centering
-\caption{The number of programming languages used in first programming courses.\label{tab:numLangs}}
-\label{tab:numLanguages}
-\begin{tabular}{ccccc}
-\hline
-Languages & 1  & 2  & 3 & 4 \\ \hline
-Courses   & 59 & 17 & 3 & 1 \\ \hline
-\end{tabular}
-\end{table}
+
+% \begin{table}[]
+% \centering
+% \caption{The number of programming languages used in first programming courses.\label{tab:numLangs}}
+% \label{tab:numLanguages}
+% \begin{tabular}{ccccc}
+% \hline
+% Languages & 1  & 2  & 3 & 4 \\ \hline
+% Courses   & 59 & 17 & 3 & 1 \\ \hline
+% \end{tabular}
+% \end{table}
+
 \section{Methodology}\label{method}
 
 \subsection{Recruitment of Participants}
@@ -306,21 +310,40 @@ colleges, which are historically teacher-training colleges.
 
 \subsubsection{Choice of Language(s)}
 
-One of the mandatory questions in the survey, and a major point of interest related to the programming languages in use in introductory programming courses. Participants were asked to select languages from a list of 22 programming languages and also had the option to choose ``Other'' and specify a language not included in the list. As shown in Table~\ref{tab:numLangs}, the majority of courses surveyed (59 out of 80) use only one programming language. From the 80 courses, the total number of {\emph{language instances}} is 106, as some courses use more than one language to teach introductory programming. 
+One of the mandatory questions in the survey, and a major point of
+interest related to the programming languages in use in introductory
+programming courses. Participants were asked to select languages from
+a list of 22 programming languages and also had the option to choose
+``Other'' and specify a language not included in the list. The
+majority of courses surveyed (59 out of 80) use only one programming
+language, with 17 using two (and only three and one institutions using
+three and four languages respectively). From the 80 courses, the total
+number of {\emph{language instances}} is 106, as some courses use more
+than one language to teach introductory programming.
 
+Of the 22 languages provided, 13 were selected at least once. The
+relative popularity of languages is shown in Figure~\ref{fig:lang},
+where the prevalence is given by the percentage of a language over all
+language instances (106 total), and weighted by student numbers (16662
+total). The programming languages that were not selected at all were:
+Actionscript, Ada, Delphi, Eiffel, Fortran, jBase, Lisp, Ruby and
+Visual Basic. With regard to the time a language is used, of 93
+language instances, the majority (65\%) are used for the whole of the
+introductory programming course, 14.0\% of language instances are used
+in the first part of a course and 21.5\% of language instances are
+used after another programming language.
 
-Of the 22 languages provided, 13 were selected at least once. The relative popularity of languages is shown in Figure~\ref{fig:lang}, where the prevalence is given by the percentage of a language over all language instances (106 total), and weighted by student numbers (16662 total). The programming languages that were not selected at all were: Actionscript, Ada, Delphi, Eiffel, Fortran, jBase, Lisp, Ruby and Visual Basic.
-
-With regard to the time a language is used, of 93 language instances, the majority (65\%) are used for the whole of the introductory programming course, 14.0\% of language instances are used in the first part of a course and 21.5\% of language instances are used after another programming language.
-
-The relative popularity of languages is the immediate major difference with
-\cite{mason+cooper:2014}. Their survey showed a dead heat (27.3\% of
-language instances) between Java and Python, with Python winning (33.7\% to
-26.9\%) when weighted by the number of students on the course.  Our
-findings (Figure \ref{fig:lang}) show that Java is a clear winner by
-any metric, being used in over half the courses (61.3\%) and just under half of all language instances (46.2\%), while the
-runner-up, Python, is in use in 17.5\% of courses and makes up 13.2\% of language instances. The C family (C, C++ and C\#) together
-is in use in 31.3\% of introductory programming courses, and scores 23.6\% of language instances and 19.5\% by students. Figure
+The relative popularity of languages is the immediate major difference
+with \cite{mason+cooper:2014}. Their survey showed a dead heat (27.3\%
+of language instances) between Java and Python, with Python winning
+(33.7\% to 26.9\%) when weighted by the number of students on the
+course.  Our findings (Figure \ref{fig:lang}) show that Java is a
+clear winner by any metric, being used in over half the courses
+(61.3\%) and just under half of all language instances (46.2\%), while
+the runner-up, Python, is in use in 17.5\% of courses and makes up
+13.2\% of language instances. The C family (C, C++ and C\#) together
+is in use in 31.3\% of introductory programming courses, and scores
+23.6\% of language instances and 19.5\% by students. Figure
 \ref{fig:lang} shows the effect of student-number weighting \emph{but}
 we have excluded the Open University from this weighting, as its 3200
 students learning Python (and Sense, a variant of Scratch) would have
