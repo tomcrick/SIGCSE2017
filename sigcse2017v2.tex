@@ -317,6 +317,7 @@ colleges, which are historically teacher-training colleges.
 
 \subsection{Languages}
 
+\subsubsection{Choice of Language(s)}
 
 One of the mandatory questions in the survey, and a major point of interest related to the programming languages in use in introductory programming courses. Participants were asked to select languages from a list of 22 programming languages and also had the option to choose ``Other'' and specify a language not included in the list. As shown in Table~\ref{tab:numLangs}, the majority of courses surveyed (59 out of 80) use only one programming language. From the 80 courses, the total number of {\emph{language instances}} is 106, as some courses use more than one language to teach introductory programming. 
 
@@ -338,31 +339,9 @@ we have excluded the Open University from this weighting, as its 3200
 students learning Python (and Sense, a variant of Scratch) would have
 distorted the comparison.
 
-% ~\cite{guo:2014} -- US universities and Python being the most popular
+\subsubsection{Language choice by Nation and Tariff Score}
 
-
-Figure~\ref{fig:reasons} shows some of the reasons for this: Java
-scores higher on ``relevance to industry'' and, perhaps somewhat
-surprisingly, much higher on ``Object Oriented language''.
-% @Tom: do you agree with ``somewhat surprisingly''?
-
-Figure~\ref{fig;LangTariff} breaks down the choice of language by
-nation and tariff group.  It is noticeable that the three English
-tariff groups differ significantly, with Python outnumbering Java in
-the low tariff universities, and C being almost exclusively in the
-high tariff universities.
-
-{\bf{@James: Need to say something about Fig 4: difficulty and usefulness.}}
-
-\begin{figure}
-\begin{center}
-\subimport{plots/}{UseAndDifficultyCompareLanguages.tex}
-\end{center}\vskip-18pt
-%\caption{The median of the perceived difficulty and usefulness of language, where 1 is `extremely easy' and 7 is `extremely difficult' for difficulty and 1 is `extremely useful' and 7 is `extremely useless' for usefulness.  Answers must have been given by at least two instructors.}
-\caption{The median of the perceived difficulty and [pedagogic] usefulness of language, where 1 is `extremely easy/useful' and 7 is `extremely difficult/useless'.  Answers must have been given by at least two instructors.\label{fig:utility}}
-\end{figure}
-
-\begin{figure}
+\begin{figure}[ht]
 \begin{center}
 \subimport{plots/}{langByTariffPercent.tex}
 \end{center}%\vskip-12pt  JHD: Oddly, this vskip seems counterproductive
@@ -376,7 +355,35 @@ high tariff universities.
 \caption{The breakdown of programming languages by Nation and Tariff Groups.\label{fig;LangTariff}}
 \end{figure}
 
-\begin{table}[]
+% ~\cite{guo:2014} -- US universities and Python being the most popular
+
+\subsubsection{Reasons for choice of language}
+Figure~\ref{fig:reasons} shows some of the reasons for this: Java
+scores higher on ``relevance to industry'' and, perhaps somewhat
+surprisingly, much higher on ``Object Oriented language''.
+% @Tom: do you agree with ``somewhat surprisingly''?
+
+Figure~\ref{fig;LangTariff} breaks down the choice of language by
+nation and tariff group.  It is noticeable that the three English
+tariff groups differ significantly, with Python outnumbering Java in
+the low tariff universities, and C being almost exclusively in the
+high tariff universities.
+
+\subsubsection{Perceived difficulty and usefulness to fundamental concepts}
+{\bf{@James: Need to say something about Fig 4: difficulty and usefulness.}}
+
+
+
+\begin{figure}
+\begin{center}
+\subimport{plots/}{UseAndDifficultyCompareLanguages.tex}
+\end{center}\vskip-18pt
+%\caption{The median of the perceived difficulty and usefulness of language, where 1 is `extremely easy' and 7 is `extremely difficult' for difficulty and 1 is `extremely useful' and 7 is `extremely useless' for usefulness.  Answers must have been given by at least two instructors.}
+\caption{The median of the perceived difficulty and [pedagogic] usefulness of language, where 1 is `extremely easy/useful' and 7 is `extremely difficult/useless'.  Answers must have been given by at least two instructors.\label{fig:utility}}
+\end{figure}
+
+\subsection{Paradigm taught}
+\begin{table}[ht]
 \centering
 \caption{The main paradigm in use in the first programming course.}
 \label{tab:paradigm}
@@ -387,14 +394,18 @@ Courses  & 40              & 27         & 7          \\ \hline
 \end{tabular}
 \end{table}
 
-%\clearpage
+\subsubsection{Paradigm by Nation and Tariff Score}
 
-\begin{figure}\vskip-12pt
+\begin{figure}[ht]\vskip-12pt
 \begin{center}
 \subimport{plots/}{paradigmByTariffPercent.tex}
 \end{center}\vskip-18pt
 \caption{The breakdown of the main paradigm in use for every Tariff Group.}
 \end{figure}
+
+%\clearpage
+
+
 
 %\begin{figure}
 %\begin{center}
@@ -419,7 +430,14 @@ Courses  & 40              & 27         & 7          \\ \hline
 \end{figure}
 
 
-\begin{table}[h]
+
+
+\subsection{Instructor Experience}
+Participants were asked: ``How many years have you been involved in
+teaching of introductory programming?''. The results, shown in
+Table~\ref{tab:yearsTeaching}, indicate that of the survey
+participants, the average was between 10 - 20 years.
+\begin{table}[ht]
 \centering
 \caption{The number of years the instructor has been involved in teaching introductory programming.}
 \label{tab:yearsTeaching}
@@ -430,12 +448,13 @@ Instructors & 3          & 9     & 9      & 27      & 19      & 7              \
 \end{tabular}
 \end{table}
 
-\subsection{Instructor Experience}
 
-Participants were asked: ``How many years have you been involved in
-teaching of introductory programming?''. The results, shown in
-Table~\ref{tab:yearsTeaching}, indicate that of the survey
-participants, the average was between 10 - 20 years.
+
+
+
+\subsection{IDEs and Tools}
+\subsubsection{Choice of tool/IDE}
+Participants in the survey were asked if they encouraged students in the first programming course to use environments and/or tools beyond simple text editors and command line compilers. The majority of participants (74.4\%) responded that they did and of those that do, the majority (59.6\%) use only one tool or IDE. See Table~\ref{tab:numTools} for more details on the number of tools and IDEs used.
 
 \begin{table}[]
 \centering
@@ -448,36 +467,29 @@ Courses & 34 & 15 & 6 & 2 & 1 \\ \hline
 \end{tabular}
 \end{table}
 
-\begin{figure}
+The survey asked participants to select the tools and IDEs in use in their introductory programming course out of a list of 24, which the option to specify ``Other''. Of the 24 provided, 12 were chosen at least once. The relative popularity of IDEs and tools is shown in Figure~\ref{fig:tools}. The tools and IDEs not selected at all were: AdaCore, Alice, App, Browser, Greenfoot, Jeroo, Jython, KTechLab, MySQL, Pelles, Quincy, Wing101 and Xcode.
+
+The most popular tool/IDE in the survey was Eclipse, reported in 37.5\% of courses and scoring 30.6\% of tool/IDE instances, and 32.1\% when weighted by the number of students that use one or more tool/IDE. This is followed by BlueJ, which was reported in \% of courses and scored 18.4\% of tool/IDE instances, and 18.6\% when weighted by students. 
+
+\begin{figure}[ht]
 \begin{center}
 \subimport{plots/}{toolPercentCompare.tex}
 \caption{Tool or environment popularity by percentage of courses and students.\label{fig:tools}}
 \end{center}
 \end{figure}
 
-\subsection{IDEs and Tools}
+\subsubsection{Reasons for choice of tool/IDE}
+Participants were also asked why each tool/IDE was chosen for their course, and asked to select from a list of reasons. The results of this are give in Figure~\ref{fig:reasonsTools}, for all tools and IDEs grouped together, and for the two most popular choices, Eclipse and BlueJ. 
 
-Participants in the survey were asked if they encouraged students in the first programming course to use environments and/or tools beyond simple text editors and command line compilers. The majority of participants (74.4\%) responded that they did and of those that do, the majority (59.6\%) use only one tool or IDE. See Table~\ref{tab:numTools} for more details on the number of tools and IDEs used.
-
-The survey asked participants to select the tools and IDEs in use in their introductory programming course out of a list of 24, which the option to specify ``Other''. Of the 24 provided, 12 were chosen at least once. The relative popularity of IDEs and tools is shown in Figure~\ref{fig:tools}. The tools and IDEs not selected at all were: AdaCore, Alice, App, Browser, Greenfoot, Jeroo, Jython, KTechLab, MySQL, Pelles, Quincy, Wing101 and Xcode.
-
-The most popular tool/IDE in the survey was Eclipse, reported in 37.5\% of courses and scoring 30.6\% of tool/IDE instances, and 32.1\% when weighted by the number of students that use one or more tool/IDE. This is followed by BlueJ, which was reported in \% of courses and scored 18.4\% of tool/IDE instances, and 18.6\% when weighted by students.
-
-Participants were also asked why each tool/IDE was chosen for their course, and asked to select from a list of reasons. The results of this are give in Figure~\ref{fig:reasonsTools}, for all tools and IDEs grouped together, and for the two most popular choices, Eclipse and BlueJ. Instructors were also asked whether the tool/IDE was used for an initial part of the first programming course or throughout the whole of the course; and whether it was used in any other course in the degree (Figure~\ref{fig:toolreuse}). 
-
-In addition to this, instructors were asked to rate how difficult {\emph{they}} found the tool/IDE on a Likert scale from extremely easy (1) to extremely difficult (7), and also how difficult they believed {\emph{the students}} found the tool/IDE, shown in Figure~\ref{fig:toolhard}.
-
-We note that, while Eclipse is the most popular tool by some way, it is also deemed to be most difficult. This, apparently perverse, practice might be explained by the extent of re-use of Eclipse in other courses.
-
-{\bf{[Anything else to be said here?]}}
-
-\begin{figure}
+\begin{figure}[ht]
 \begin{center}
 \subimport{plots/}{reasonsByCourseCompareTool.tex}
 \end{center}
 \caption{Reasons given for choosing a tool or environment by percentage for: all tools and environments; BlueJ; and Eclipse.\label{fig:reasonsTools}}
 \end{figure}
 
+\subsubsection{Reuse of tool/IDE}
+Instructors were also asked whether the tool/IDE was used for an initial part of the first programming course or throughout the whole of the course; and whether it was used in any other course in the degree (Figure~\ref{fig:toolreuse}). 
 \begin{figure}
 \begin{center}
 \subimport{plots/}{timingOtherCourseTool.tex}
@@ -485,6 +497,8 @@ We note that, while Eclipse is the most popular tool by some way, it is also dee
 \caption{For each tool or environment, whether it is used: for an initial part of the first programming course; throughout the whole of the first programming course; in any other course in the degree.\label{fig:toolreuse}}
 \end{figure}
 
+\subsubsection{Difficulty of tool/IDE}
+In addition to this, instructors were asked to rate how difficult {\emph{they}} found the tool/IDE on a Likert scale from extremely easy (1) to extremely difficult (7), and also how difficult they believed {\emph{the students}} found the tool/IDE, shown in Figure~\ref{fig:toolhard}.
 
 \begin{figure}
 \begin{center}
@@ -493,8 +507,14 @@ We note that, while Eclipse is the most popular tool by some way, it is also dee
 \caption{The median difficulty rating of tool/environment for the instructor and students to use, where 1 is `extremely easy' and 7 is `extremely difficult'.  Answers must have been given by at least two instructors.\label{fig:toolhard}}
 \end{figure}
 
+We note that, while Eclipse is the most popular tool by some way, it is also deemed to be most difficult. This, apparently perverse, practice might be explained by the extent of re-use of Eclipse in other courses.
+
+{\bf{[Anything else to be said here?]}}
+
+
 \subsection{Other Aspects of the Course}
 
+\subsubsection{External Delivery}
 \begin{figure}
 \begin{center}
 \subimport{plots/}{Steps.tex}
@@ -502,13 +522,14 @@ We note that, while Eclipse is the most popular tool by some way, it is also dee
 \caption{Steps taken to determine whether students have received unauthorised assistance on assignments.\label{fig:Plagiarise}}
 \end{figure}
 %\par
-
+\subsubsection{Resources provided to students}
 The questionnaire asked about the resources in terms of examples,
 books etc. provided to students. The results are rather similar to
 \cite[Figure 14]{mason+cooper:2014} so we do not repeat that here:
 details are in the full paper.
 %\par
 
+\subsubsection{Unauthorised assistance}
 Conversely, \cite{mason+cooper:2014} asked participants: ``what steps do you take to try to determine whether students have received unauthorised assistance on assignments?'' but didn't give the results  in their paper. {\bf{[@James: this was one of the questions given to me by Raina, but it's possible that it was only added to the list after [8] was published. So might not be correct to say that it was asked by them.]}} We
 report our results in Figure \ref{fig:Plagiarise}, as we think they
 are of general interest. 
