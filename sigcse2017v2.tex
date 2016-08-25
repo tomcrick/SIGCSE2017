@@ -304,7 +304,7 @@ colleges, which are historically teacher-training colleges.
 
 \subsection{Languages}
 
-\subsubsection{Choice of Language(s)}
+%\subsubsection{Choice of Language(s)}
 
 One of the mandatory questions in the survey, and a major point of interest related to the programming languages in use in introductory programming courses. Participants were asked to select languages from a list of 22 programming languages and also had the option to choose ``Other'' and specify a language not included in the list. As shown in Table~\ref{tab:numLangs}, the majority of courses surveyed (59 out of 80) use only one programming language. From the 80 courses, the total number of {\emph{language instances}} is 106, as some courses use more than one language to teach introductory programming. 
 
@@ -343,13 +343,13 @@ distorted the comparison.
 
 % ~\cite{guo:2014} -- US universities and Python being the most popular
 
-\subsubsection{Reasons for choice of language}
+%\subsubsection{Reasons for choice of language}
 For each language selected, participants were asked to give the reasons for choosing that language for the introductory programming course. Figure~\ref{fig:reasons} shows the frequency of these reasons for all languages grouped together and for Java and Python individually. When the reasons given are combined for all languages, three reasons tie for first place: ``relevance to industry''; ``object-oriented language''; and ``availability and cost to students'', all chosen by 54.5\% of participants who answered this question.
 
 Looked at individually, the most popular reason given for choosing Java is ``object-oriented language'' at 87.2\%, while Python scores highest on ``pedagogical benefits'', at 72.7\%. This may explain the popularity of Java: Java scores higher on ``relevance to industry'' and, perhaps somewhat surprisingly, much higher on ``object-oriented language'' than Python, which scores only 18.2\%.
 % @Tom: do you agree with ``somewhat surprisingly''?
 
-\subsubsection{Language choice by Nation and Tariff Score}
+%\subsubsection{Language choice by Nation and Tariff Score}
 
 Figure~\ref{fig;LangTariff} breaks down the choice of language by
 nation and tariff group.  It is noticeable that the three English
@@ -358,8 +358,8 @@ the low tariff universities, and C being almost exclusively in the
 high tariff universities.
 
 
-\subsubsection{Perceived difficulty and usefulness to fundamental concepts}
-{\bf{@James: Need to say something about Fig 4: difficulty and usefulness.}}
+%\subsubsection{Perceived difficulty and usefulness to fundamental concepts}
+%{\bf{@James: Need to say something about Fig 4: difficulty and usefulness.}}
 
 
 
@@ -380,18 +380,6 @@ Paradigm & OO & Procedural & Functional & No Answer \\ \hline
 Courses  & 40              & 27         & 7    & 6      \\ \hline
 \end{tabular}
 \end{table}
-\subsection{Paradigm taught}
-
-Instructors were asked what paradigm was being taught in their introductory programming course, regardless of what is traditionally thought to apply to the language(s) in use. This question, understandably, caused some dissatisfaction in the comments section, with many participants noting that more than paradigm is taught in their course. Although this was to be expected, we wanted to be able to directly compare our results to \cite{mason+cooper:2014}, and so did not alter the question.
-
-The results of this question are given in Table~\ref{tab:paradigm}. We can see that the most popular paradigm is object-oriented, followed by procedural and functional (logical was also offered as a choice but was not selected). 
-
-
-
-%\subsubsection{Paradigm by nation and tariff score}
-The results of the previous question were used to analyse the prevalence of paradigms across nations and tariff score groups. This analysis is displayed in Figure~\ref{fig:paradigmTariff}. Caution must be applied when interpreting these results, as participants could only choose one paradigm, even though more may be in use.
-
-{\bf{[@James: Need to add some commentary here.]}}
 
 \begin{figure}[ht]\vskip-12pt
 \begin{center}
@@ -406,6 +394,20 @@ The results of the previous question were used to analyse the prevalence of para
 \end{center}\vskip-18pt
 \caption{The breakdown of the main paradigm in use for each programming language.\label{fig:paradigmLang}}
 \end{figure}
+\subsection{Paradigm taught}
+
+Instructors were asked what paradigm was being taught in their introductory programming course, regardless of what is traditionally thought to apply to the language(s) in use. This question, understandably, caused some dissatisfaction in the comments section, with many participants noting that more than paradigm is taught in their course. Although this was to be expected, we wanted to be able to directly compare our results to \cite{mason+cooper:2014}, and so did not alter the question.
+
+The results of this question are given in Table~\ref{tab:paradigm}. We can see that the most popular paradigm is object-oriented, followed by procedural and functional (logical was also offered as a choice but was not selected). 
+
+
+
+%\subsubsection{Paradigm by nation and tariff score}
+The results of the previous question were used to analyse the prevalence of paradigms across nations and tariff score groups. This analysis is displayed in Figure~\ref{fig:paradigmTariff}. Caution must be applied when interpreting these results, as participants could only choose one paradigm, even though more may be in use.
+
+{\bf{[@James: Need to add some commentary here.]}}
+
+
 
 %\subsubsection{Paradigm by language}
 
@@ -440,11 +442,11 @@ teaching of introductory programming?''. The results, shown in
 Table~\ref{tab:yearsTeaching}, indicate that of the survey
 participants, the average was between 10 - 20 years.
 
-{\bf{[Anything else to be said here?]}}
+%{\bf{[Anything else to be said here?]}}
 
 \begin{table}[ht]
 \centering
-\caption{The number of years the instructor has been involved in teaching introductory programming.}
+\caption{The number of years the instructor has been teaching introductory programming.}
 \label{tab:yearsTeaching}
 \begin{tabular}{ccccccc}
 \hline
@@ -477,21 +479,22 @@ Participants in the survey were asked if they encouraged students in the first p
 Tools   & 1  & 2  & 3 & 4 & 8 \\ \hline
 Courses & 34 & 15 & 6 & 2 & 1 \\ \hline
 \end{tabular}
-\end{table}
-
-The survey asked participants to select the tools and IDEs in use in their introductory programming course out of a list of 24, which the option to specify ``Other''. Of the 24 provided, 12 were chosen at least once. The relative popularity of IDEs and tools is shown in Figure~\ref{fig:tools}. The tools and IDEs not selected at all were: AdaCore, Alice, App, Browser, Greenfoot, Jeroo, Jython, KTechLab, MySQL, Pelles, Quincy, Wing101 and Xcode.
-
-The most popular tool/IDE in the survey was Eclipse, reported in 37.5\% of courses and scoring 30.6\% of tool/IDE instances, and 32.1\% when weighted by the number of students that use one or more tool/IDE. This is followed by BlueJ, which was reported in \% of courses and scored 18.4\% of tool/IDE instances, and 18.6\% when weighted by students. 
-
-\subsubsection{Reasons for choice of tool/IDE}
-Participants were also asked why each tool/IDE was chosen for their course, and asked to select from a list of reasons. The results of this are give in Figure~\ref{fig:reasonsTools}, for all tools and IDEs grouped together, and for the two most popular choices, Eclipse and BlueJ. 
-
+\end{table} 
 \begin{figure}[ht]
 \begin{center}
 \subimport{plots/}{reasonsByCourseCompareTool.tex}
 \end{center}
 \caption{Reasons given for choosing a tool or environment by percentage for: all tools and environments; BlueJ; and Eclipse.\label{fig:reasonsTools}}
 \end{figure}
+
+The survey asked participants to select the tools and IDEs in use in their introductory programming course out of a list of 24, which the option to specify ``Other''. Of the 24 provided, 12 were chosen at least once. The relative popularity of IDEs and tools is shown in Figure~\ref{fig:tools}. 
+%The tools and IDEs not selected at all were: AdaCore, Alice, App, Browser, Greenfoot, Jeroo, Jython, KTechLab, MySQL, Pelles, Quincy, Wing101 and Xcode.
+
+The most popular tool/IDE in the survey was Eclipse, reported in 37.5\% of courses and scoring 30.6\% of tool/IDE instances, and 32.1\% when weighted by the number of students that use one or more tool/IDE. This is followed by BlueJ, which was reported in \% of courses and scored 18.4\% of tool/IDE instances, and 18.6\% when weighted by students. 
+
+\subsubsection{Reasons for choice of tool/IDE}
+Participants were also asked why each tool/IDE was chosen for their course, and asked to select from a list of reasons. The results of this are give in Figure~\ref{fig:reasonsTools}, for all tools and IDEs grouped together, and for the two most popular choices, Eclipse and BlueJ. 
+
 
 \subsubsection{Reuse of tool/IDE}
 Instructors were also asked whether the tool/IDE was used for an initial part of the first programming course or throughout the whole of the course; and whether it was used in any other course in the degree (Figure~\ref{fig:toolreuse}). 
@@ -551,6 +554,14 @@ are of general interest.
 %\caption{Resources provided to students.}
 %\end{figure}
 \fi
+
+\begin{figure}
+\begin{center}
+\subimport{plots/}{Aims.tex}
+\end{center}\vskip-18pt
+\caption{Aims of the introductory course. \label{fig:aims}}
+\end{figure}
+
 \subsection{Aims of an Introductory Programming Course}
 
  \cite{mason+cooper:2014} asked their respondents for the aims of
@@ -565,13 +576,6 @@ code''. There were also a class of aims, such as ``Establish
 professional software development practices'', that seemed very
 coherent, but didn't map clearly to the \cite{mason+cooper:2014}
 aims. These we have categorised as ``Software Engineering''. Results of this question are shown in Figure~\ref{fig:aims}.
-
-\begin{figure}
-\begin{center}
-\subimport{plots/}{Aims.tex}
-\end{center}\vskip-18pt
-\caption{Aims of the introductory course. \label{fig:aims}}
-\end{figure}
 
 \section{General Discussion}\label{discussion}
 
