@@ -325,13 +325,29 @@ Of the 22 languages provided, 13 were selected at least once. The
 relative popularity of languages is shown in Figure~\ref{fig:lang},
 where the prevalence is given by the percentage of a language over all
 language instances (106 total), and weighted by student numbers (16662
-total). The programming languages that were not selected at all were:
-Actionscript, Ada, Delphi, Eiffel, Fortran, jBase, Lisp, Ruby and
-Visual Basic. With regard to the time a language is used, of 93
+total). With regard to the time a language is used, of 93
 language instances, the majority (65\%) are used for the whole of the
 introductory programming course, 14.0\% of language instances are used
 in the first part of a course and 21.5\% of language instances are
 used after another programming language.
+
+% The programming languages that were not selected at all were:
+% Actionscript, Ada, Delphi, Eiffel, Fortran, jBase, Lisp, Ruby and
+% Visual Basic. 
+
+\begin{figure}[ht]
+\begin{center}
+\subimport{plots/}{langByTariffPercent.tex}
+\end{center}%\vskip-12pt  JHD: Oddly, this vskip seems counterproductive
+%\caption{The breakdown of programming languages for each of the Tariff Groups.}
+%\end{figure}
+%
+%\begin{figure}
+\begin{center}
+\subimport{plots/}{TariffByLangPercent.tex}
+\end{center}\vskip-18pt
+\caption{The breakdown of programming languages by Nation and Tariff Groups.\label{fig;LangTariff}}
+\end{figure}
 
 The relative popularity of languages is the immediate major difference
 with \cite{mason+cooper:2014}. Their survey showed a dead heat (27.3\%
@@ -343,11 +359,11 @@ clear winner by any metric, being used in over half the courses
 the runner-up, Python, is in use in 17.5\% of courses and makes up
 13.2\% of language instances. The C family (C, C++ and C\#) together
 is in use in 31.3\% of introductory programming courses, and scores
-23.6\% of language instances and 19.5\% by students. Figure
-\ref{fig:lang} shows the effect of student-number weighting \emph{but}
-we have excluded the Open University from this weighting, as its 3200
-students learning Python (and Sense, a variant of Scratch) would have
-distorted the comparison.
+23.6\% of language instances and 19.5\% by
+students. Figure~\ref{fig:lang} shows the effect of student-number
+weighting \emph{but} we have excluded the Open University from this
+weighting, as its 3200 students learning Python (and Sense, a variant
+of Scratch) would have distorted the comparison.
 
 % ~\cite{guo:2014} -- US universities and Python being the most popular
 
@@ -365,19 +381,6 @@ tariff groups differ significantly, with Python outnumbering Java in
 the low tariff universities, and C being almost exclusively in the
 high tariff universities.
 
-\begin{figure}[ht]
-\begin{center}
-\subimport{plots/}{langByTariffPercent.tex}
-\end{center}%\vskip-12pt  JHD: Oddly, this vskip seems counterproductive
-%\caption{The breakdown of programming languages for each of the Tariff Groups.}
-%\end{figure}
-%
-%\begin{figure}
-\begin{center}
-\subimport{plots/}{TariffByLangPercent.tex}
-\end{center}\vskip-18pt
-\caption{The breakdown of programming languages by Nation and Tariff Groups.\label{fig;LangTariff}}
-\end{figure}
 
 \subsubsection{Perceived difficulty and usefulness to fundamental concepts}
 {\bf{@James: Need to say something about Fig 4: difficulty and usefulness.}}
@@ -391,13 +394,6 @@ high tariff universities.
 %\caption{The median of the perceived difficulty and usefulness of language, where 1 is `extremely easy' and 7 is `extremely difficult' for difficulty and 1 is `extremely useful' and 7 is `extremely useless' for usefulness.  Answers must have been given by at least two instructors.}
 \caption{The median of the perceived difficulty and [pedagogic] usefulness of language, where 1 is `extremely easy/useful' and 7 is `extremely difficult/useless'.  Answers must have been given by at least two instructors.\label{fig:utility}}
 \end{figure}
-
-\subsection{Paradigm taught}
-
-Instructors were asked what paradigm was being taught in their introductory programming course, regardless of what is traditionally thought to apply to the language(s) in use. This question, understandably, caused some dissatisfaction in the comments section, with many participants noting that more than paradigm is taught in their course. Although this was to be expected, we wanted to be able to directly compare our results to \cite{mason+cooper:2014}, and so did not alter the question.
-
-The results of this question are given in Table~\ref{tab:paradigm}. We can see that the most popular paradigm is object-oriented, followed by procedural and functional (logical was also offered as a choice but was not selected). 
-
 \begin{table}[ht]
 \centering
 \caption{The main paradigm in use in the first programming course.}
@@ -408,8 +404,15 @@ Paradigm & OO & Procedural & Functional & No Answer \\ \hline
 Courses  & 40              & 27         & 7    & 6      \\ \hline
 \end{tabular}
 \end{table}
+\subsection{Paradigm taught}
 
-\subsubsection{Paradigm by nation and tariff score}
+Instructors were asked what paradigm was being taught in their introductory programming course, regardless of what is traditionally thought to apply to the language(s) in use. This question, understandably, caused some dissatisfaction in the comments section, with many participants noting that more than paradigm is taught in their course. Although this was to be expected, we wanted to be able to directly compare our results to \cite{mason+cooper:2014}, and so did not alter the question.
+
+The results of this question are given in Table~\ref{tab:paradigm}. We can see that the most popular paradigm is object-oriented, followed by procedural and functional (logical was also offered as a choice but was not selected). 
+
+
+
+%\subsubsection{Paradigm by nation and tariff score}
 The results of the previous question were used to analyse the prevalence of paradigms across nations and tariff score groups. This analysis is displayed in Figure~\ref{fig:paradigmTariff}. Caution must be applied when interpreting these results, as participants could only choose one paradigm, even though more may be in use.
 
 {\bf{[@James: Need to add some commentary here.]}}
@@ -421,17 +424,18 @@ The results of the previous question were used to analyse the prevalence of para
 \caption{The breakdown of the main paradigm in use for every Tariff Group.\label{fig:paradigmTariff}}
 \end{figure}
 
-\subsubsection{Paradigm by language}
-
-In the same way as above, the languages chosen were analysed with regard to the main paradigm in use. The results are given in Figure~\ref{fig:paradigmLang}. Again, caution must be applied, as for a given course, only one paradigm is chosen, even though more than one language and/or paradigm may be in use.
-
-{\bf{[@James: Need to add some commentary here.]}}
 \begin{figure}
 \begin{center}
 \subimport{plots/}{ParadigmByLangPercent.tex}
 \end{center}\vskip-18pt
 \caption{The breakdown of the main paradigm in use for each programming language.\label{fig:paradigmLang}}
 \end{figure}
+
+%\subsubsection{Paradigm by language}
+
+In the same way as above, the languages chosen were analysed with regard to the main paradigm in use. The results are given in Figure~\ref{fig:paradigmLang}. Again, caution must be applied, as for a given course, only one paradigm is chosen, even though more than one language and/or paradigm may be in use.
+
+{\bf{[@James: Need to add some commentary here.]}}
 
 
 %\begin{figure}
@@ -534,7 +538,7 @@ In addition to this, instructors were asked to rate how difficult {\emph{they}} 
 
 We note that, while Eclipse is the most popular tool by some way, it is also deemed to be most difficult. This, apparently perverse, practice might be explained by the extent of re-use of Eclipse in other courses.
 
-{\bf{[@James: Any other commentary on tools/IDEs?]}}
+%{\bf{[@James: Any other commentary on tools/IDEs?]}}
 
 
 \subsection{Other Aspects of the Course}
