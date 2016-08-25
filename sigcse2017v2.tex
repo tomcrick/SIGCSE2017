@@ -159,29 +159,27 @@ entrance tariff (qualifications of entrants); we have followed that
 banding during our analysis the English results, so our data should
 allow comparisons.
 
-\iffalse
 % should we mention TEF?
-Alongside this increased scrutiny of standards and outputs for
-computer science degrees in UK universities, a Teaching Excellence
-Framework\footnote{\url{http://www.hefce.ac.uk/lt/tef/}} has been
-proposed as part of proposed new higher education legislation. The
-core ambition of the framework is ``to raise the quality and status of
-teaching in higher education institutions''; excellence is to be
-measured through a series of proxy metrics that include student
-satisfaction, retention and graduate employability. There has been
-significant concerns about the aims of the framework, as well as the
-suitability of the metrics; more so in the context of it benchmarking
-and creating leagues tables for ``teaching excellence'', as well as
-deciding whether institutions are allowed to raise tuition fees in the
-future. The UK's Higher Education Academy -- the national body which
-champions teaching quality -- has previously supported initiatives for
-improving learning \& teaching in computer science, including
-innovative pedagogies for
-programming~\cite{crick-et-al-hea:2015,davenport-et-al:latice2016},
-but we have not seen the desired cascading of best practice and wider
-national impact.
+% Alongside this increased scrutiny of standards and outputs for
+% computer science degrees in UK universities, a Teaching Excellence
+% Framework\footnote{\url{http://www.hefce.ac.uk/lt/tef/}} has been
+% proposed as part of proposed new higher education legislation. The
+% core ambition of the framework is ``to raise the quality and status of
+% teaching in higher education institutions''; excellence is to be
+% measured through a series of proxy metrics that include student
+% satisfaction, retention and graduate employability. There has been
+% significant concerns about the aims of the framework, as well as the
+% suitability of the metrics; more so in the context of it benchmarking
+% and creating leagues tables for ``teaching excellence'', as well as
+% deciding whether institutions are allowed to raise tuition fees in the
+% future. The UK's Higher Education Academy -- the national body which
+% champions teaching quality -- has previously supported initiatives for
+% improving learning \& teaching in computer science, including
+% innovative pedagogies for
+% programming~\cite{crick-et-al-hea:2015,davenport-et-al:latice2016},
+% but we have not seen the desired cascading of best practice and wider
+% national impact.
 % should we mention HEA and our work?
-\fi 
 
 Thus, in this emerging environment of policy, curricula, pedagogy and
 the evolving demands of high-quality learning \& teaching for computer
@@ -418,7 +416,7 @@ Courses  & 40              & 27         & 7    & 6      \\ \hline
 \end{center}\vskip-18pt
 \caption{The breakdown of the main paradigm in use for each programming language.\label{fig:paradigmLang}}
 \end{figure}
-\subsection{Paradigm taught}
+\subsection{Paradigm Taught}
 
 Instructors were asked what paradigm was being taught in their introductory programming course, regardless of what is traditionally thought to apply to the language(s) in use. This question, understandably, caused some dissatisfaction in the comments section, with many participants noting that more than paradigm is taught in their course. Although this was to be expected, we wanted to be able to directly compare our results to \cite{mason+cooper:2014}, and so did not alter the question.
 
@@ -491,19 +489,29 @@ Instructors & 3          & 9     & 9      & 27      & 19      & 7              \
 
 
 \subsection{IDEs and Tools}
-\subsubsection{Choice of tool/IDE}
-Participants in the survey were asked if they encouraged students in the first programming course to use environments and/or tools beyond simple text editors and command line compilers. The majority of participants of this question (74.4\% of 78 instructors) responded that they did encourage tools. Of the 58 instructors that did select a tool/IDE, the majority (59.6\%) use only one. See Table~\ref{tab:numTools} for more details on the number of tools and IDEs used.
 
-\begin{table}[]
-\centering
-\caption{The number of tools/environments used in first programming courses.\ref{tab:numTools}}
-\label{tab:numTools}
-\begin{tabular}{cccccc}
-\hline
-Tools   & 1  & 2  & 3 & 4 & 8 \\ \hline
-Courses & 34 & 15 & 6 & 2 & 1 \\ \hline
-\end{tabular}
-\end{table} 
+%\subsubsection{Choice of tool/IDE}
+
+Participants in the survey were asked if they encouraged students in
+the first programming course to use environments and/or tools beyond
+simple text editors and command line compilers. The majority of
+participants of this question (74.4\% of 78 instructors) responded
+that they did encourage tools. Of the 58 instructors that did select a
+tool/IDE, the majority (58.6\%) use only one, with 25.8\% and 10.3\%
+using two and three respectively; very few (c.5\%) used four or more,
+with one respondent using eight.
+
+% \begin{table}[]
+% \centering
+% \caption{The number of tools/environments used in first programming courses.\ref{tab:numTools}}
+% \label{tab:numTools}
+% \begin{tabular}{cccccc}
+% \hline
+% Tools   & 1  & 2  & 3 & 4 & 8 \\ \hline
+% Courses & 34 & 15 & 6 & 2 & 1 \\ \hline
+% \end{tabular}
+% \end{table} 
+
 \begin{figure}[ht]
 \begin{center}
 \subimport{plots/}{reasonsByCourseCompareTool.tex}
@@ -511,13 +519,25 @@ Courses & 34 & 15 & 6 & 2 & 1 \\ \hline
 \caption{Reasons given for choosing a tool or environment by percentage for: all tools and environments; BlueJ; and Eclipse.\label{fig:reasonsTools}}
 \end{figure}
 
-The survey asked participants to select the tools and IDEs in use in their introductory programming course out of a list of 24, which the option to specify ``Other''. Of the 24 provided, 12 were chosen at least once. The relative popularity of IDEs and tools is shown in Figure~\ref{fig:tools}. 
+The survey asked participants to select the tools and IDEs in use in
+their introductory programming course out of a list of 24, which the
+option to specify ``Other''. Of the 24 provided, 12 were chosen at
+least once. The relative popularity of IDEs and tools is shown in
+Figure~\ref{fig:tools}. The most popular tool/IDE in the survey was
+Eclipse, reported in 37.5\% of courses and scoring 30.6\% of tool/IDE
+instances, and 32.1\% when weighted by the number of students that use
+one or more tool/IDE. This is followed by BlueJ, which was reported in
+\% of courses and scored 18.4\% of tool/IDE instances, and 18.6\% when
+weighted by students. Participants were also asked why each tool/IDE
+was chosen for their course, and asked to select from a list of
+reasons. The results of this are give in
+Figure~\ref{fig:reasonsTools}, for all tools and IDEs grouped
+together, and for the two most popular choices, Eclipse and BlueJ.
+
 %The tools and IDEs not selected at all were: AdaCore, Alice, App, Browser, Greenfoot, Jeroo, Jython, KTechLab, MySQL, Pelles, Quincy, Wing101 and Xcode.
 
-The most popular tool/IDE in the survey was Eclipse, reported in 37.5\% of courses and scoring 30.6\% of tool/IDE instances, and 32.1\% when weighted by the number of students that use one or more tool/IDE. This is followed by BlueJ, which was reported in \% of courses and scored 18.4\% of tool/IDE instances, and 18.6\% when weighted by students. 
+%\subsubsection{Reasons for choice of tool/IDE}
 
-\subsubsection{Reasons for choice of tool/IDE}
-Participants were also asked why each tool/IDE was chosen for their course, and asked to select from a list of reasons. The results of this are give in Figure~\ref{fig:reasonsTools}, for all tools and IDEs grouped together, and for the two most popular choices, Eclipse and BlueJ. 
 
 
 \subsubsection{Reuse of tool/IDE}
