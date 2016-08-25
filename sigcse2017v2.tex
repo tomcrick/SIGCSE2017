@@ -458,6 +458,13 @@ Instructors & 3          & 9     & 9      & 27      & 19      & 7              \
 
 
 
+\begin{figure}[ht]
+\begin{center}
+\subimport{plots/}{toolPercentCompare.tex}
+\caption{Tool or environment popularity by percentage of courses and students.\label{fig:tools}}
+\end{center}
+\end{figure}
+
 
 \subsection{IDEs and Tools}
 \subsubsection{Choice of tool/IDE}
@@ -477,13 +484,6 @@ Courses & 34 & 15 & 6 & 2 & 1 \\ \hline
 The survey asked participants to select the tools and IDEs in use in their introductory programming course out of a list of 24, which the option to specify ``Other''. Of the 24 provided, 12 were chosen at least once. The relative popularity of IDEs and tools is shown in Figure~\ref{fig:tools}. The tools and IDEs not selected at all were: AdaCore, Alice, App, Browser, Greenfoot, Jeroo, Jython, KTechLab, MySQL, Pelles, Quincy, Wing101 and Xcode.
 
 The most popular tool/IDE in the survey was Eclipse, reported in 37.5\% of courses and scoring 30.6\% of tool/IDE instances, and 32.1\% when weighted by the number of students that use one or more tool/IDE. This is followed by BlueJ, which was reported in \% of courses and scored 18.4\% of tool/IDE instances, and 18.6\% when weighted by students. 
-
-\begin{figure}[ht]
-\begin{center}
-\subimport{plots/}{toolPercentCompare.tex}
-\caption{Tool or environment popularity by percentage of courses and students.\label{fig:tools}}
-\end{center}
-\end{figure}
 
 \subsubsection{Reasons for choice of tool/IDE}
 Participants were also asked why each tool/IDE was chosen for their course, and asked to select from a list of reasons. The results of this are give in Figure~\ref{fig:reasonsTools}, for all tools and IDEs grouped together, and for the two most popular choices, Eclipse and BlueJ. 
@@ -510,7 +510,7 @@ In addition to this, instructors were asked to rate how difficult {\emph{they}} 
 \begin{figure}
 \begin{center}
 \subimport{plots/}{DifficultyYouStudentsCompareTools.tex}
-\end{center}
+\end{center}\vskip-18pt
 \caption{The median difficulty rating of tool/environment for the instructor and students to use, where 1 is `extremely easy' and 7 is `extremely difficult'.  Answers must have been given by at least two instructors.\label{fig:toolhard}}
 \end{figure}
 
@@ -520,7 +520,7 @@ We note that, while Eclipse is the most popular tool by some way, it is also dee
 
 
 \subsection{Other Aspects of the Course}
-
+\iffalse
 \subsubsection{External Delivery}
 \begin{figure}
 \begin{center}
@@ -530,14 +530,19 @@ We note that, while Eclipse is the most popular tool by some way, it is also dee
 \end{figure}
 %\par
 \subsubsection{Resources provided to students}
+\fi
 The questionnaire asked about the resources in terms of examples,
 books etc. provided to students. The results are rather similar to
 \cite[Figure 14]{mason+cooper:2014} so we do not repeat that here:
 details are in the full paper.
 %\par
 
-\subsubsection{Unauthorised assistance}
-Conversely, \cite{mason+cooper:2014} asked participants: ``what steps do you take to try to determine whether students have received unauthorised assistance on assignments?'' but didn't give the results  in their paper. {\bf{[@James: this was one of the questions given to me by Raina, but it's possible that it was only added to the list after [8] was published. So might not be correct to say that it was asked by them.]}} We
+%\subsubsection{Unauthorised assistance}
+We  asked participants: ``what steps do you take to try to determine whether students have received unauthorised assistance on assignments?''. The details are in the full paper, but range from ``notice unlikely similarities'' (50\% of instructors) to ``interview some students/groups at random'', selected by only 5 instructors. {\bf @Ellen: is this right}
+
+\iffalse
+% {\bf{[@James: this was one of the questions given to me by Raina, but it's possible that it was only added to the list after [8] was published. So might not be correct to say that it was asked by them.]}} 
+We
 report our results in Figure \ref{fig:Plagiarise}, as we think they
 are of general interest. 
 
@@ -547,7 +552,7 @@ are of general interest.
 %\end{center}\vskip-18pt
 %\caption{Resources provided to students.}
 %\end{figure}
-
+\fi
 \subsection{Aims of an Introductory Programming Course}
 
  \cite{mason+cooper:2014} asked their respondents for the aims of
@@ -589,8 +594,9 @@ first, but we also notice that our difficulty/utility data (Figure
 Another difference shows up in the tools/enviroments are: Figure
 \ref{fig:tools} versus \cite{mason+cooper:2014}'s Figure 11. There,
 ``None'' and ``Other'' were the top two categories, with Idle, at
-15\%, the most popular named product. In the UK, ``Other'' is fifth
-and Idle seventh, with no ``None'' @Ellen: is that right?{\bf{[@Tom/James?: No, ``none'' scores second for us 28.2\% but I didn't think to include it in graph. I can add it if you like.]}}.
+15\%, the most popular named product. In the UK, ``None'' is second, ``Other'' is fifth
+and Idle seventh.
+%, with no ``None'' @Ellen: is that right?{\bf{[@Tom/James?: No, ``none'' scores second for us 28.2\% but I didn't think to include it in graph. I can add it if you like.]  @Ellen, yes please}}.
 
 
 \section{Acknowledgements}
