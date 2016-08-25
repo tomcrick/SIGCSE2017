@@ -339,7 +339,21 @@ we have excluded the Open University from this weighting, as its 3200
 students learning Python (and Sense, a variant of Scratch) would have
 distorted the comparison.
 
+% ~\cite{guo:2014} -- US universities and Python being the most popular
+
+\subsubsection{Reasons for choice of language}
+For each language selected, participants were asked to give the reasons for choosing that language for the introductory programming course. Figure~\ref{fig:reasons} shows the frequency of these reasons for all languages grouped together and for Java and Python individually. When the reasons given are combined for all languages, three reasons tie for first place: ``relevance to industry''; ``object-oriented language''; and ``availability and cost to students'', all chosen by 54.5\% of participants who answered this question.
+
+Looked at individually, the most popular reason given for choosing Java is ``object-oriented language'' at 87.2\%, while Python scores highest on ``pedagogical benefits'', at 72.7\%. This may explain the popularity of Java: Java scores higher on ``relevance to industry'' and, perhaps somewhat surprisingly, much higher on ``object-oriented language'' than Python, which scores only 18.2\%.
+% @Tom: do you agree with ``somewhat surprisingly''?
+
 \subsubsection{Language choice by Nation and Tariff Score}
+
+Figure~\ref{fig;LangTariff} breaks down the choice of language by
+nation and tariff group.  It is noticeable that the three English
+tariff groups differ significantly, with Python outnumbering Java in
+the low tariff universities, and C being almost exclusively in the
+high tariff universities.
 
 \begin{figure}[ht]
 \begin{center}
@@ -355,20 +369,6 @@ distorted the comparison.
 \caption{The breakdown of programming languages by Nation and Tariff Groups.\label{fig;LangTariff}}
 \end{figure}
 
-% ~\cite{guo:2014} -- US universities and Python being the most popular
-
-\subsubsection{Reasons for choice of language}
-Figure~\ref{fig:reasons} shows some of the reasons for this: Java
-scores higher on ``relevance to industry'' and, perhaps somewhat
-surprisingly, much higher on ``Object Oriented language''.
-% @Tom: do you agree with ``somewhat surprisingly''?
-
-Figure~\ref{fig;LangTariff} breaks down the choice of language by
-nation and tariff group.  It is noticeable that the three English
-tariff groups differ significantly, with Python outnumbering Java in
-the low tariff universities, and C being almost exclusively in the
-high tariff universities.
-
 \subsubsection{Perceived difficulty and usefulness to fundamental concepts}
 {\bf{@James: Need to say something about Fig 4: difficulty and usefulness.}}
 
@@ -383,6 +383,11 @@ high tariff universities.
 \end{figure}
 
 \subsection{Paradigm taught}
+
+Instructors were asked what paradigm was being taught in their introductory programming course, regardless of what is traditionally thought to apply to the language(s) in use. This question, understandably, caused some dissatisfaction in the comments section, with many participants noting that more than paradigm is taught in their course. Although this was to be expected, we wanted to be able to directly compare our results to \cite{mason+cooper:2014}, and so did not alter the question.
+
+The results of this question are given in Table~\ref{tab:paradigm}. We can see that the most popular paradigm is object-oriented, followed by procedural and functional (logical was also offered as a choice but was not selected). 
+
 \begin{table}[ht]
 \centering
 \caption{The main paradigm in use in the first programming course.}
@@ -394,17 +399,29 @@ Courses  & 40              & 27         & 7          \\ \hline
 \end{tabular}
 \end{table}
 
-\subsubsection{Paradigm by Nation and Tariff Score}
+\subsubsection{Paradigm by nation and tariff score}
+The results of the previous question were used to analyse the prevalence of paradigms across nations and tariff score groups. This analysis is displayed in Figure~\ref{fig:paradigmTariff}. Caution must be applied when interpreting these results, as participants could only choose one paradigm, even though more may be in use.
+
+{\bf{[@James: Need to add some commentary here.]}}
 
 \begin{figure}[ht]\vskip-12pt
 \begin{center}
 \subimport{plots/}{paradigmByTariffPercent.tex}
 \end{center}\vskip-18pt
-\caption{The breakdown of the main paradigm in use for every Tariff Group.}
+\caption{The breakdown of the main paradigm in use for every Tariff Group.\label{fig:paradigmTariff}}
 \end{figure}
 
-%\clearpage
+\subsubsection{Paradigm by language}
 
+In the same way as above, the languages chosen were analysed with regard to the main paradigm in use. The results are given in Figure~\ref{fig:paradigmLang}. Again, caution must be applied, as for a given course, only one paradigm is chosen, even though more than one language and/or paradigm may be in use.
+
+{\bf{[@James: Need to add some commentary here.]}}
+\begin{figure}
+\begin{center}
+\subimport{plots/}{ParadigmByLangPercent.tex}
+\end{center}\vskip-18pt
+\caption{The breakdown of the main paradigm in use for each programming language.\label{fig:paradigmLang}}
+\end{figure}
 
 
 %\begin{figure}
@@ -422,12 +439,7 @@ Courses  & 40              & 27         & 7          \\ \hline
 %\end{figure}
 
 
-\begin{figure}
-\begin{center}
-\subimport{plots/}{ParadigmByLangPercent.tex}
-\end{center}\vskip-18pt
-\caption{The breakdown of the main paradigm in use for each programming language.}
-\end{figure}
+
 
 
 
@@ -437,6 +449,9 @@ Participants were asked: ``How many years have you been involved in
 teaching of introductory programming?''. The results, shown in
 Table~\ref{tab:yearsTeaching}, indicate that of the survey
 participants, the average was between 10 - 20 years.
+
+{\bf{[Anything else to be said here?]}}
+
 \begin{table}[ht]
 \centering
 \caption{The number of years the instructor has been involved in teaching introductory programming.}
@@ -509,7 +524,7 @@ In addition to this, instructors were asked to rate how difficult {\emph{they}} 
 
 We note that, while Eclipse is the most popular tool by some way, it is also deemed to be most difficult. This, apparently perverse, practice might be explained by the extent of re-use of Eclipse in other courses.
 
-{\bf{[Anything else to be said here?]}}
+{\bf{[@James: Any other commentary on tools/IDEs?]}}
 
 
 \subsection{Other Aspects of the Course}
