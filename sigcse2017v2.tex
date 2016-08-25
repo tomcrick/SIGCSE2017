@@ -212,7 +212,7 @@ given to students are also examined, along with comparisons to the
 %??
 \begin{table}[]
 \centering
-\caption{The number of programming languages used in first programming courses.}
+\caption{The number of programming languages used in first programming courses.\label{tab:numLangs}}
 \label{tab:numLanguages}
 \begin{tabular}{ccccc}
 \hline
@@ -317,14 +317,22 @@ colleges, which are historically teacher-training colleges.
 
 \subsection{Languages}
 
-This is the immediate major difference with
+
+One of the mandatory questions in the survey, and a major point of interest related to the programming languages in use in introductory programming courses. Participants were asked to select languages from a list of 22 programming languages and also had the option to choose ``Other'' and specify a language not included in the list. As shown in Table~\ref{tab:numLangs}, the majority of courses surveyed (59 out of 80) use only one programming language. From the 80 courses, the total number of {\emph{language instances}} is 106, as some courses use more than one language to teach introductory programming. 
+
+
+Of the 22 languages provided, 13 were selected at least once. The relative popularity of languages is shown in Figure~\ref{fig:lang}, where the prevalence is given by the percentage of a language over all language instances (106 total), and weighted by student numbers (16662 total). The programming languages that were not selected at all were: Actionscript, Ada, Delphi, Eiffel, Fortran, jBase, Lisp, Ruby and Visual Basic.
+
+With regard to the time a language is used, of 93 language instances, the majority (65\%) are used for the whole of the introductory programming course, 14.0\% of language instances are used in the first part of a course and 21.5\% of language instances are used after another programming language.
+
+The relative popularity of languages is the immediate major difference with
 \cite{mason+cooper:2014}. Their survey showed a dead heat (27.3\% of
 language instances) between Java and Python, with Python winning (33.7\% to
 26.9\%) when weighted by the number of students on the course.  Our
 findings (Figure \ref{fig:lang}) show that Java is a clear winner by
 any metric, being used in over half the courses (61.3\%) and just under half of all language instances (46.2\%), while the
 runner-up, Python, is in use in 17.5\% of courses and makes up 13.2\% of language instances. The C family (C, C++ and C\#) together
-is in use in 31.3\% of introductory programming courses, and scores 23.6\% of language instances by number of courses and 19.5\% by students. Figure
+is in use in 31.3\% of introductory programming courses, and scores 23.6\% of language instances and 19.5\% by students. Figure
 \ref{fig:lang} shows the effect of student-number weighting \emph{but}
 we have excluded the Open University from this weighting, as its 3200
 students learning Python (and Sense, a variant of Scratch) would have
@@ -343,6 +351,8 @@ nation and tariff group.  It is noticeable that the three English
 tariff groups differ significantly, with Python outnumbering Java in
 the low tariff universities, and C being almost exclusively in the
 high tariff universities.
+
+\bf{@James: Need to say something about Fig 4: difficulty and usefulness.}
 
 \begin{figure}
 \begin{center}
