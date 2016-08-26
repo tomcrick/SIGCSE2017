@@ -161,28 +161,6 @@ entrance tariff (qualifications of entrants); we have followed that
 banding during our analysis the English results, so our data should
 allow comparisons.
 
-% should we mention TEF?
-% Alongside this increased scrutiny of standards and outputs for
-% computer science degrees in UK universities, a Teaching Excellence
-% Framework\footnote{\url{http://www.hefce.ac.uk/lt/tef/}} has been
-% proposed as part of proposed new higher education legislation. The
-% core ambition of the framework is ``to raise the quality and status of
-% teaching in higher education institutions''; excellence is to be
-% measured through a series of proxy metrics that include student
-% satisfaction, retention and graduate employability. There has been
-% significant concerns about the aims of the framework, as well as the
-% suitability of the metrics; more so in the context of it benchmarking
-% and creating leagues tables for ``teaching excellence'', as well as
-% deciding whether institutions are allowed to raise tuition fees in the
-% future. The UK's Higher Education Academy -- the national body which
-% champions teaching quality -- has previously supported initiatives for
-% improving learning \& teaching in computer science, including
-% innovative pedagogies for
-% programming~\cite{crick-et-al-hea:2015,davenport-et-al:latice2016},
-% but we have not seen the desired cascading of best practice and wider
-% national impact.
-% should we mention HEA and our work?
-
 Thus, in this emerging environment of policy, curricula, pedagogy and
 the evolving demands of high-quality learning and teaching for computer
 science degree programmes, we present the findings from the first
@@ -244,11 +222,11 @@ from certain departments, and these were reconciled by direct enquiry.
 \subsection{Questions}
 
 The questions used in the survey were generously provided by the
-authors of the 2014 Australia and New Zealand
+authors of the 2013 Australia and New Zealand
 survey~\cite{mason+cooper:2014}, so as to allow direct comparison
 between the results of this survey. Where possible, questions were
 left unchanged, although a small minority were edited to reflect the
-UK target audience. As defined in the 2014 Aus/NZ survey, the
+UK target audience. As defined in the 2013 Aus/NZ survey, the
 terminology ``course'' was used for ``{\emph{the basic unit of study that is
 completed by students towards a degree, usually studied over a period
 pf a semester or session, in conjunction with other units of study}}''.
@@ -266,7 +244,7 @@ teaching introductory programming, and were also allowed to provide
 further comments.
 
 % @James: I checked the paper - they could rank all reasons, not just top three.
-In the 2014 Aus/NZ survey, participants were asked to rank the
+In the 2013 Aus/NZ survey, participants were asked to rank the
 importance of the given reasons for choosing a programming language,
 environment or tool. Due to technical limitations in the online survey
 tool used, it was not possible to do so in this survey, so
@@ -314,7 +292,7 @@ One of the mandatory questions in the survey, and a major point of
 interest related to the programming languages in use in introductory
 programming courses. Participants were asked to select languages from
 a list of 22 programming languages and also had the option to choose
-``Other'' and specify a language not included in the list. The
+``{\emph{Other}}'' and specify a language not included in the list. The
 majority of courses surveyed (59 out of 80) use only one programming
 language, with 17 using two (and only three and one institutions using
 three and four languages respectively). From the 80 courses, the total
@@ -365,13 +343,24 @@ weighting \emph{but} we have excluded the Open University from this
 weighting, as its 3200 students learning Python (and Sense, a variant
 of Scratch) would have distorted the comparison.
 
-% ~\cite{guo:2014} -- US universities and Python being the most popular
-
 %\subsubsection{Reasons for choice of language}
-For each language selected, participants were asked to give the reasons for choosing that language for the introductory programming course. Figure~\ref{fig:reasons} shows the frequency of these reasons for all languages grouped together and for Java and Python individually. When the reasons given are combined for all languages, three reasons tie for first place: ``relevance to industry''; ``object-oriented language''; and ``availability and cost to students'', all chosen by 54.5\% of participants who answered this question.
+For each language selected, participants were asked to give the
+reasons for choosing that language for the introductory programming
+course. Figure~\ref{fig:reasons} shows the frequency of these reasons
+for all languages grouped together and for Java and Python
+individually. When the reasons given are combined for all languages,
+three reasons tie for first place: ``{\emph{relevance to industry}}'';
+``{\emph{object-oriented language}}''; and ``{\emph{availability and cost to
+students}}'', all chosen by 54.5\% of participants who answered this
+question.
 
-Looked at individually, the most popular reason given for choosing Java is ``object-oriented language'' at 87.2\%, while Python scores highest on ``pedagogical benefits'', at 72.7\%. This may explain the popularity of Java: Java scores higher on ``relevance to industry'' and, perhaps somewhat surprisingly, much higher on ``object-oriented language'' than Python, which scores only 18.2\%.
-% @Tom: do you agree with ``somewhat surprisingly''?
+Looked at individually, the most popular reason given for choosing
+Java is ``{\emph{object-oriented language}}'' at 87.2\%, while Python scores
+highest on ``{\emph{pedagogical benefits}}'', at 72.7\%. This may explain the
+popularity of Java: Java scores higher on ``{\emph{relevance to industry}}''
+and, perhaps somewhat surprisingly, much higher on ``{\emph{object-oriented
+language}}'' than Python, which scores only 18.2\%.
+% @Tom: do you agree with ``somewhat surprisingly''? TC: Not sure!
 
 %\subsubsection{Language choice by Nation and Tariff Score}
 
@@ -421,22 +410,34 @@ Courses  & 40              & 27         & 7    & 6      \\ \hline
 \end{figure}
 \subsection{Paradigm Taught}
 
-Instructors were asked what paradigm was being taught in their introductory programming course, regardless of what is traditionally thought to apply to the language(s) in use. This question, understandably, caused some dissatisfaction in the comments section, with many participants noting that more than paradigm is taught in their course. Although this was to be expected, we wanted to be able to directly compare our results to \cite{mason+cooper:2014}, and so did not alter the question.
-
-The results of this question are given in Table~\ref{tab:paradigm}. We can see that the most popular paradigm is object-oriented, followed by procedural and functional (logical was also offered as a choice but was not selected). 
-
-
+Instructors were asked what paradigm was being taught in their
+introductory programming course, regardless of what is traditionally
+thought to apply to the language(s) in use. This question,
+understandably, caused some dissatisfaction in the comments section,
+with many participants noting that more than paradigm is taught in
+their course. Although this was to be expected, we wanted to be able
+to directly compare our results to the 2013 Aus/NZ survey, and so did
+not alter the question. The results of this question are given in
+Table~\ref{tab:paradigm}. We can see that the most popular paradigm is
+object-oriented, followed by procedural and functional (logical was
+also offered as a choice but was not selected).
 
 %\subsubsection{Paradigm by nation and tariff score}
-The results of the previous question were used to analyse the prevalence of paradigms across nations and tariff score groups. This analysis is displayed in Figure~\ref{fig:paradigmTariff}. Caution must be applied when interpreting these results, as participants could only choose one paradigm, even though more may be in use.
+The results of the previous question were used to analyse the
+prevalence of paradigms across nations and tariff score groups. This
+analysis is displayed in Figure~\ref{fig:paradigmTariff}. Caution must
+be applied when interpreting these results, as participants could only
+choose one paradigm, even though more may be in use.
 
 {\bf{[@James: Need to add some commentary here.]}}
 
-
-
 %\subsubsection{Paradigm by language}
 
-In the same way as above, the languages chosen were analysed with regard to the main paradigm in use. The results are given in Figure~\ref{fig:paradigmLang}. Again, caution must be applied, as for a given course, only one paradigm is chosen, even though more than one language and/or paradigm may be in use.
+In the same way as above, the languages chosen were analysed with
+regard to the main paradigm in use. The results are given in
+Figure~\ref{fig:paradigmLang}. Again, caution must be applied, as for
+a given course, only one paradigm is chosen, even though more than one
+language and/or paradigm may be in use.
 
 {\bf{[@James: Need to add some commentary here.]}}
 
@@ -455,12 +456,6 @@ In the same way as above, the languages chosen were analysed with regard to the 
 %\caption{The breakdown of programming languages in use for each paradigm.}
 %\end{figure}
 
-
-
-
-
-
-
 \begin{figure}[ht]
 \begin{center}
 \subimport{plots/}{toolPercentCompare.tex}\vskip-18pt
@@ -469,10 +464,11 @@ In the same way as above, the languages chosen were analysed with regard to the 
 \end{figure}
 
 \subsection{Instructor Experience}
-Participants were asked: ``How many years have you been involved in
-teaching of introductory programming?''. The results, shown in
-Table~\ref{tab:yearsTeaching}, indicate that of the survey
-participants, the average was between 10 - 20 years.
+
+Participants were asked: ``{\emph{How many years have you been
+involved in teaching of introductory programming?}}''. The results,
+shown in Table~\ref{tab:yearsTeaching}, indicate that of the survey
+participants, the average was between 10-20 years.
 
 %{\bf{[Anything else to be said here?]}}
 
@@ -486,9 +482,6 @@ Years       & \textless 2 & 2 - 5 & 5 - 10 & 10 - 20 & 20 - 30 & \textgreater 30
 Instructors & 3          & 9     & 9      & 27      & 19      & 7              \\ \hline
 \end{tabular}
 \end{table}
-
-
-
 
 
 \subsection{IDEs and Tools}
@@ -524,15 +517,17 @@ with one respondent using eight.
 
 The survey asked participants to select the tools and IDEs in use in
 their introductory programming course out of a list of 24, which the
-option to specify ``Other''. Of the 24 provided, 12 were chosen at
-least once. The relative popularity of IDEs and tools is shown in
-Figure~\ref{fig:tools}. The most popular tool/IDE in the survey was
-Eclipse, reported in 37.5\% of courses and scoring 25.0\% of tool/IDE
-instances, and 26.8\% when weighted by students. Following this is ``no tool/IDE'', which accounts for 27.5\% of courses. The second most popular tool/IDE is BlueJ, which was reported in
-22.5\% of courses and scored 15.0\% of tool/IDE instances, and 15.5\% when
-weighted by students. Participants were also asked why each tool/IDE
-was chosen for their course, and asked to select from a list of
-reasons. The results of this are give in
+option to specify ``{\emph{Other}}''. Of the 24 provided, 12 were
+chosen at least once. The relative popularity of IDEs and tools is
+shown in Figure~\ref{fig:tools}. The most popular tool/IDE in the
+survey was Eclipse, reported in 37.5\% of courses and scoring 25.0\%
+of tool/IDE instances, and 26.8\% when weighted by students. Following
+this is ``{\emph{No Tool/IDE}}'', which accounts for 27.5\% of
+courses. The second most popular tool/IDE is BlueJ, which was reported
+in 22.5\% of courses and scored 15.0\% of tool/IDE instances, and
+15.5\% when weighted by students. Participants were also asked why
+each tool/IDE was chosen for their course, and asked to select from a
+list of reasons. The results of this are give in
 Figure~\ref{fig:reasonsTools}, for all tools and IDEs grouped
 together, and for the two most popular choices, Eclipse and BlueJ.
 
@@ -541,9 +536,13 @@ together, and for the two most popular choices, Eclipse and BlueJ.
 %\subsubsection{Reasons for choice of tool/IDE}
 
 
+\subsubsection{Reuse of Tool/IDE}
 
-\subsubsection{Reuse of tool/IDE}
-Instructors were also asked whether the tool/IDE was used for an initial part of the first programming course or throughout the whole of the course; and whether it was used in any other course in the degree (Figure~\ref{fig:toolreuse}). 
+Instructors were also asked whether the tool/IDE was used for an
+initial part of the first programming course or throughout the whole
+of the course; and whether it was used in any other course in the
+degree (Figure~\ref{fig:toolreuse}). 
+
 \begin{figure}[ht]
 \begin{center}
 \subimport{plots/}{timingOtherCourseTool.tex}
@@ -551,8 +550,13 @@ Instructors were also asked whether the tool/IDE was used for an initial part of
 \caption{For each tool or environment, whether it is used: for an initial part of the first programming course; throughout the whole of the first programming course; in any other course in the degree.\label{fig:toolreuse}}
 \end{figure}
 
-\subsubsection{Difficulty of tool/IDE}
-In addition to this, instructors were asked to rate how difficult {\emph{they}} found the tool/IDE on a Likert scale from extremely easy (1) to extremely difficult (7), and also how difficult they believed {\emph{the students}} found the tool/IDE, shown in Figure~\ref{fig:toolhard}.
+\subsubsection{Difficulty of Tool/IDE}
+
+In addition to this, instructors were asked to rate how difficult
+{\emph{they}} found the tool/IDE on a Likert scale from
+``{\emph{Extremely Easy}}'' (1) to ``{\emph{Extremely Difficult}}''
+(7), and also how difficult they believed {\emph{the students}} found
+the tool/IDE, shown in Figure~\ref{fig:toolhard}.
 
 \begin{figure}
 \begin{center}
@@ -562,7 +566,10 @@ In addition to this, instructors were asked to rate how difficult {\emph{they}} 
 \label{fig:toolhard}}
 \end{figure}
 
-We note that, while Eclipse is the most popular tool by some way, it is also deemed to be most difficult. This, apparently perverse, practice might be explained by the extent of re-use of Eclipse in other courses.
+We note that, while Eclipse is the most popular tool by some way, it
+is also deemed to be most difficult. This, apparently perverse,
+practice might be explained by the extent of re-use of Eclipse in
+other courses.
 
 %{\bf{[@James: Any other commentary on tools/IDEs?]}}
 
@@ -580,19 +587,26 @@ We note that, while Eclipse is the most popular tool by some way, it is also dee
 \subsubsection{Resources provided to students}
 \fi
 The questionnaire asked about the resources in terms of examples,
-books etc. provided to students. The results are rather similar to
-\cite[Figure 14]{mason+cooper:2014} so we do not repeat that here:
-details are in the full paper.
+books etc. provided to students. The results are rather similar to the
+2013 Aus/NZ survey~\cite[Figure 14]{mason+cooper:2014} so we do not
+repeat that here.
 %\par
 
 %\subsubsection{Unauthorised assistance}
-We  asked participants: ``what steps do you take to try to determine whether students have received unauthorised assistance on assignments?''. The details are in the full paper, but range from ``notice unlikely similarities'' (59.1\% of the 66 instructors who responded to this question) to ``interview some students/groups at random'', selected by only 5 instructors. %{\bf @Ellen: is this right - I've corrected the percentage and now it is.} 
+We asked participants: ``{\emph{What steps do you take to try to
+determine whether students have received unauthorised assistance on
+assignments?}}''. The details are in the full paper\footnote{The full
+paper will shortly be available on arXiv.}, but range from
+``{\emph{notice unlikely similarities}}'' (59.1\% of the 66
+instructors who responded to this question) to ``{\emph{interview some
+students/groups at random}}'', selected by only five instructors.
+
+%{\bf @Ellen: is this right - I've corrected the percentage and now it is.} 
 
 \iffalse
 % {\bf{[@James: this was one of the questions given to me by Raina, but it's possible that it was only added to the list after [8] was published. So might not be correct to say that it was asked by them.]}} 
-We
-report our results in Figure \ref{fig:Plagiarise}, as we think they
-are of general interest. 
+We report our results in Figure~\ref{fig:Plagiarise}, as we think they
+are of general interest.
 
 %\begin{figure}
 %\begin{center}
@@ -611,48 +625,81 @@ are of general interest.
 
 \subsection{Aims of an Introductory Programming Course}
 
- \cite{mason+cooper:2014} asked their respondents for the aims of
-their introductory programming course. They, and we, asked for (up to)
-three aims. The authors then attempted to classify the free-text
-answers into the same categorisation as \cite{mason+cooper:2014}
-used. While it is trivial to map the written aim ``Thinking
-algorithmically'' to \cite{mason+cooper:2014}'s ``Algorithmic
-thinking'' and so on, many were not so clear: for example, we mapped
-``To learn a specific language'' to ``syntax/writing basic
-code''. There were also a class of aims, such as ``Establish
-professional software development practices'', that seemed very
-coherent, but didn't map clearly to the \cite{mason+cooper:2014}
-aims. These we have categorised as ``Software Engineering''. Results of this question are shown in Figure~\ref{fig:aims}.
+The 2013 Aus/NZ survey asked their respondents for the aims of their
+introductory programming course. They, and we, asked for (up to) three
+aims. The authors then attempted to classify the free-text answers
+into the same categorisation as \cite{mason+cooper:2014} used. While
+it is trivial to map the written aim ``{\emph{Thinking
+algorithmically}}'' to ``{\emph{Algorithmic
+thinking}}''~\cite{mason+cooper:2014} and so on, many were not so
+clear: for example, we mapped ``{\emph{To learn a specific
+language}}'' to ``{\emph{Syntax/writing basic code}}''. There were
+also a class of aims, such as ``{\emph{Establish professional software
+development practices}}'', that seemed very coherent, but did not map
+clearly to the \cite{mason+cooper:2014} aims. These we have
+categorised as ``{\emph{Software Engineering}}''. Results of this
+question are shown in Figure~\ref{fig:aims}.
 
 \section{General Discussion}\label{discussion}
 
-\subsection{The U.K. context}
+\subsection{The UK Context}
+
+We note that from a survey conducted in July 2014, Python is the most
+popular language for teaching introductory computer science courses at
+top-ranked US university departments; specifically, eight of the top
+10 CS departments (80\%), and 27 of the top 39 (69\%), teach Python in
+introductory CS0 or CS1 courses~\cite{guo:2014}.
+
+% should we mention TEF here?
+Finally, alongside this increased scrutiny of standards and outputs
+for computer science degrees in UK universities, a Teaching Excellence
+Framework\footnote{\url{http://www.hefce.ac.uk/lt/tef/}} has been
+proposed as part of forthcoming higher education legislation. The core
+ambition of the framework is ``{\emph{to raise the quality and status
+of teaching in higher education institutions}}''; excellence is to be
+measured through a series of proxy metrics that include student
+satisfaction, retention and graduate employability. There has been
+significant concerns about the aims of the framework, as well as the
+suitability of the metrics; more so in the context of it benchmarking
+and creating leagues tables for ``teaching excellence'', as well as
+deciding whether institutions are allowed to raise tuition fees in the
+future.
+% The UK's Higher Education Academy -- the national body which
+% champions teaching quality -- has previously supported initiatives for
+% improving learning \& teaching in computer science, including
+% innovative pedagogies for
+% programming~\cite{crick-et-al-hea:2015,davenport-et-al:latice2016},
+% but we have not seen the desired cascading of best practice and wider
+% national impact.
+% should we mention HEA and our work?
 
 \subsection{Comparison with Australasia}
 
-Here we compare with \cite{mason+cooper:2014}, the latest Australasian
-survey. We have already commented on the major difference in language
-choice, which colours many of the other comparisons. n fact, the
-U.K.'s language choices seem more similar to Australasia's 2010
-choices \cite{mason-et-al:2012} and \cite[Table 4]{mason+cooper:2014}
-than even Australasia's 2013 choices. It is hard to know which comes
-first, but we also notice that our difficulty/utility data (Figure
-\ref{fig:utility}) is somewhat different from \cite[Figures
-7,8]{mason+cooper:2014}
+Here we compare with the latest Australasian
+survey~\cite{mason+cooper:2014}. We have already commented on the
+major difference in language choice, which colours many of the other
+comparisons. In fact, the UK's language choices seem more similar to
+Australasia's 2010 choices~\cite{mason-et-al:2012} and \cite[Table
+4]{mason+cooper:2014} than even Australasia's 2013 choices. It is hard
+to know which comes first, but we also notice that our
+difficulty/utility data (Figure \ref{fig:utility}) is somewhat
+different from \cite[Figures 7/8]{mason+cooper:2014}
 
 Another difference shows up in the tools/enviroments are: Figure
 \ref{fig:tools} versus \cite{mason+cooper:2014}'s Figure 11. There,
-``None'' and ``Other'' were the top two categories, with Idle, at
-15\%, the most popular named product. In the UK, ``None'' is second, ``Other'' is sixth
-and Idle eighth.
+``{\emph{None}}'' and ``{\emph{Other}}'' were the top two categories,
+with IDLE, at 15\%, the most popular named product. In the UK,
+``{\emph{None}}'' is second, ``{\emph{Other}}'' is sixth and IDLE
+eighth.
 %, with no ``None'' @Ellen: is that right?{\bf{[@Tom/James?: No, ``none'' scores second for us 28.2\% but I didn't think to include it in graph. I can add it if you like.]  @Ellen, yes please}}.
 
 
 \section{Acknowledgements}
 
 The authors would like to thank the participants for their engagement
-with the survey, as well as the authors of [8] for providing us with
-their survey and permission to use it.
+with the survey, as well as R. Mason and G. Cooper from Southern Cross
+University, Australia, for providing us with their survey and
+permission to use it.
 % HEFCE? I think we should in the final version, but leave them out for now.
 % CPHC? Not really
 % GW4 - JHD has asked what the form of words should be.
