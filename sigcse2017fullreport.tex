@@ -1,81 +1,37 @@
-% This is ''sig-alternate.tex'' V2.0 May 2012
-% This file should be compiled with V2.5 of '\'sig-alternate.cls'' May 2012
-
-\documentclass{sig-alternate}
-\sloppy
-\usepackage{paralist}
+\documentclass[a4paper,11pt]{article}
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm,asymmetric]{geometry}
 \usepackage{url}
-\def\UrlBreaks{\do\/\do-}
-\usepackage[pdftex,breaklinks]{hyperref}
+\usepackage{paralist}
+\usepackage{authblk}
 \usepackage{import}
 \usepackage{tikz}
-%\usepackage{caption}
-%\captionsetup[figure]{skip=0pt}
+\usepackage[colorlinks=true,hyperfootnotes=true,breaklinks]{hyperref}
+
+
+\title{An Analysis of Introductory University\\Programming Courses in
+  the UK}
+
+% authors
+\author[1]{Ellen Murphy}
+\author[2]{Tom Crick}
+\author[3]{James H. Davenport}
+% institutions
+\affil[1]{Institute for Mathematical Innovation, University of Bath, UK}
+\affil[2]{Dept. of Computing, Cardiff Metropolitan University, UK}
+\affil[3]{Dept. of Computer Science, University of Bath, UK}
+% emails
+\affil[1]{\url{e.murphy@bath.ac.uk}}
+\affil[2]{\url{tcrick@cardiffmet.ac.uk}}
+\affil[3]{\url{j.h.davenport@bath.ac.uk}}
+
+\renewcommand\Authands{ and }
+\def\UrlBreaks{\do\/\do-}
+
+%\date{ }
 
 \begin{document}
-%
-% --- Author Metadata here ---
-\setcopyright{acmlicensed}
-\conferenceinfo{SIGCSE}{2017 Seattle, Washington, USA}
-\CopyrightYear{2017} % Allows default copyright year (20XX) to be over-ridden - IF NEED BE.
-%\crdata{0-12345-67-8/90/01}  % Allows default copyright data (0-89791-88-6/97/05) to be over-ridden - IF NEED BE.
-% --- End of Author Metadata ---
-
- \begin{CCSXML}
-<ccs2012>
-<concept>
-<concept_id>10003456.10003457.10003527.10003531</concept_id>
-<concept_desc>Social and professional topics~Computing education programs</concept_desc>
-<concept_significance>500</concept_significance>
-</concept>
-<concept>
-<concept_id>10003456.10003457.10003527.10003541</concept_id>
-<concept_desc>Social and professional topics~K-12 education</concept_desc>
-<concept_significance>300</concept_significance>
-</concept>
-<concept>
-<concept_id>10003456.10003457.10003458</concept_id>
-<concept_desc>Social and professional topics~Computing industry</concept_desc>
-<concept_significance>100</concept_significance>
-</concept>
-<concept>
-<concept_id>10011007.10011006.10011008</concept_id>
-<concept_desc>Software and its engineering~General programming languages</concept_desc>
-<concept_significance>500</concept_significance>
-</concept>
-</ccs2012>
-\end{CCSXML}
-
-\ccsdesc[500]{Social and professional topics~Computing education programs}
-\ccsdesc[300]{Social and professional topics~K-12 education}
-\ccsdesc[100]{Social and professional topics~Computing industry}
-\ccsdesc[500]{Software and its engineering~General programming languages}
-
-\title{An Analysis of Introductory University Programming Courses in the UK}
-
-\numberofauthors{3}
-% \author{
-% % 1st. author
-% \alignauthor
-% Ellen Murphy\\
-% \affaddr{Institute for\\Mathematical Innovation}\\
-% \affaddr{University of Bath}\\
-% \affaddr{e.murphy@bath.ac.uk}
-% % 2nd. author
-% \alignauthor
-% Tom Crick\\
-% \affaddr{Dept. of Computing}\\
-% \affaddr{Cardiff Metropolitan University}\\
-% \affaddr{tcrick@cardiffmet.ac.uk}
-% % 3rd. author
-% \alignauthor
-% James H. Davenport\\
-% \affaddr{Dept. of Computer Science}\\
-% \affaddr{University of Bath}\\
-% \affaddr{j.h.davenport@bath.ac.uk}\\
-% }
-
 \maketitle
+
 
 \begin{abstract}
 This paper reports the results of the first survey of introductory
@@ -140,16 +96,17 @@ context of increasing international focus on curriculum and
 qualification reform to support computer science education and digital
 skills in schools, the four education systems of the UK have proposed
 and implemented a variety of
-changes~\cite{rs:2012,brown-et-al-toce2014}, particular in England,
-with a new compulsory computing curriculum for ages 5-16 from
-September 2014. For universities across the UK offering computer
-science degrees, this school curriculum reform has had uncertain (and
-emerging) impact on the delivery of their undergraduate programmes,
-with the diversity of the educational background of applicants likely
-to increase before it narrows: it is certainly possible now for
-prospective students to have anywhere from zero to four or five years
-experience (and potentially two school qualifications) in computer
-science with some knowledge of programming.
+changes~\cite{rs:2012,brown-et-al-sigcse2013,brown-et-al-toce2014},
+particular in England, with a new compulsory computing curriculum for
+ages 5-16 from September 2014~\cite{dfecomp:2013}. For universities
+across the UK offering computer science degrees~\cite{qaacomp:2016},
+this school curriculum reform has had uncertain (and emerging) impact
+on the delivery of their undergraduate programmes, with the diversity
+of the educational background of applicants likely to increase before
+it narrows: it is certainly possible now for prospective students to
+have anywhere from zero to four or five years experience (and
+potentially two school qualifications) in computer science with some
+knowledge of programming.
 
 % In 1997, Scotland and Wales held referenda which determined in both
 % cases the desire for self-government (along with Northern Ireland and
@@ -195,7 +152,7 @@ reported.
 
 \begin{figure}
 \begin{center}
-\subimport{plots/}{tariffGroupCompare.tex}\vskip-12pt
+\subimport{plots/}{tariffGroupCompare.tex}
 \caption{The number of responding universities per Nation/   
  Tariff Group.\label{fig:TG}}
 \end{center}
@@ -232,7 +189,7 @@ from certain departments, and these were reconciled by direct enquiry.
 \begin{figure}
 \begin{center}
 \subimport{plots/}{langPercentCompare.tex}
-\end{center}\vskip-18pt
+\end{center}
 \caption{Language popularity by percentage of courses and students (excl. OU).\label{fig:lang}}
 \end{figure}
 
@@ -266,9 +223,9 @@ importance of the given reasons for choosing a programming language,
 environment or tool. Due to technical limitations in the online survey
 tool used, it was not possible to do so in this survey, so
 Figure~\ref{fig:reasons} only reports counts. Most questions were not
-mandatory; the exceptions were ``what programming language(s) are in
-use?'' and a small number of feeder questions to allow the survey to
-function correctly.
+mandatory; the exceptions were ``{\emph{what programming language(s)
+are in use?}}'' and a small number of feeder questions to allow the
+survey to function correctly.
 
 \section{Results and Discussion}\label{results}
 
@@ -283,14 +240,13 @@ results presented here are drawn from the responses of 80 instructors
 from at least 70 universities. Some participants did not answer all
 questions and due to this the response rate varies by question.
 
-
 \begin{figure}
 \begin{center}
 \subimport{plots/}{reasonsByCourseCompare.tex}
-\end{center}\vskip-18pt
+\end{center}
 \caption{Reasons given for choosing a programming language by percentage for: all languages; Java; and Python.\label{fig:reasons}}
 \end{figure}
-\par
+
 Excluding the Open University's 3200 students, the participants in the
 survey represented 13462 students, with a mean of 173 (but a standard
 deviation of 88). Looking at Figure \ref{fig:TG} we see good response
@@ -340,7 +296,7 @@ used after another programming language.
 %\begin{figure}
 \begin{center}
 \subimport{plots/}{TariffByLangPercent.tex}
-\end{center}\vskip-18pt
+\end{center}
 \caption{The breakdown of programming languages by Nation and Tariff Groups.\label{fig;LangTariff}}
 \end{figure}
 
@@ -398,7 +354,7 @@ pedagogically most useful.
 \begin{figure}
 \begin{center}
 \subimport{plots/}{UseAndDifficultyCompareLanguages.tex}
-\end{center}\vskip-18pt
+\end{center}
 %\caption{The median of the perceived difficulty and usefulness of language, where 1 is `extremely easy' and 7 is `extremely difficult' for difficulty and 1 is `extremely useful' and 7 is `extremely useless' for usefulness.}%  Answers must have been given by at least two instructors.}
 \caption{The median of the perceived difficulty and [pedagogic] usefulness of language, where 1 is `extremely easy/useful' and 7 is `extremely difficult/useless'.% Answers must have been given by at least two instructors.
 \label{fig:utility}}
@@ -415,17 +371,17 @@ pedagogically most useful.
 % \end{tabular}
 % \end{table}
 
-\begin{figure}[ht]\vskip-12pt
+\begin{figure}[ht]
 \begin{center}
 \subimport{plots/}{paradigmByTariffPercent.tex}
-\end{center}\vskip-18pt
+\end{center}
 \caption{The breakdown of the main paradigm in use for every Tariff Group.\label{fig:paradigmTariff}}
 \end{figure}
 
 \begin{figure}
 \begin{center}
 \subimport{plots/}{ParadigmByLangPercent.tex}
-\end{center}\vskip-18pt
+\end{center}
 \caption{The breakdown of the main paradigm in use for each programming language.\label{fig:paradigmLang}}
 \end{figure}
 \subsection{Paradigm Taught}
@@ -479,7 +435,7 @@ fact that Python was almost exclusively viewed as procedural.
 
 \begin{figure}[ht]
 \begin{center}
-\subimport{plots/}{toolPercentCompare.tex}\vskip-18pt
+\subimport{plots/}{toolPercentCompare.tex}
 \caption{Tool or environment popularity by percentage of courses and students.\label{fig:tools}}
 \end{center}
 \end{figure}
@@ -530,9 +486,9 @@ with one respondent using eight.
 % \end{table} 
 
 \begin{figure}[ht]
-\begin{center}\vskip-12pt
+\begin{center}
 \subimport{plots/}{reasonsByCourseCompareTool.tex}
-\end{center}\vskip-18pt
+\end{center}
 \caption{Reasons given for choosing a tool or environment by percentage for: all tools and environments; BlueJ; and Eclipse.\label{fig:reasonsTools}}
 \end{figure}
 
@@ -567,7 +523,7 @@ degree (Figure~\ref{fig:toolreuse}).
 \begin{figure}[ht]
 \begin{center}
 \subimport{plots/}{timingOtherCourseTool.tex}
-\end{center}\vskip-18pt
+\end{center}
 \caption{For each tool or environment, whether it is used: for an initial part of the first programming course; throughout the whole of the first programming course; in any other course in the degree.\label{fig:toolreuse}}
 \end{figure}
 
@@ -582,7 +538,7 @@ the tool/IDE, shown in Figure~\ref{fig:toolhard}.
 \begin{figure}
 \begin{center}
 \subimport{plots/}{DifficultyYouStudentsCompareTools.tex}
-\end{center}\vskip-18pt
+\end{center}
 \caption{The median difficulty rating of tool for the instructor and students to use, where 1 is `extremely easy' and 7 is `extremely difficult'.  %Answers must have been given by at least two instructors.
 \label{fig:toolhard}}
 \end{figure}
@@ -596,22 +552,22 @@ other courses.
 
 
 \subsection{Other Aspects of the Course}
-\iffalse
+
 \subsubsection{External Delivery}
 \begin{figure}
 \begin{center}
 \subimport{plots/}{Steps.tex}
-\end{center}\vskip-18pt
+\end{center}
 \caption{Steps taken to determine whether students have received unauthorised assistance on assignments.\label{fig:Plagiarise}}
 \end{figure}
-%\par
+
 \subsubsection{Resources provided to students}
-\fi
+
 The questionnaire asked about the resources in terms of examples,
 books etc. provided to students. The results are rather similar to the
 2013 Aus/NZ survey~\cite[Figure 14]{mason+cooper:2014} so we do not
 repeat that here.
-%\par
+
 
 %\subsubsection{Unauthorised assistance}
 We asked participants: ``{\emph{What steps do you take to try to
@@ -624,7 +580,7 @@ students/groups at random}}'', selected by only five instructors.
 
 %{\bf @Ellen: is this right - I've corrected the percentage and now it is.} 
 
-\iffalse
+
 % {\bf{[@James: this was one of the questions given to me by Raina, but it's possible that it was only added to the list after [8] was published. So might not be correct to say that it was asked by them.]}} 
 We report our results in Figure~\ref{fig:Plagiarise}, as we think they
 are of general interest.
@@ -635,12 +591,12 @@ are of general interest.
 %\end{center}\vskip-18pt
 %\caption{Resources provided to students.}
 %\end{figure}
-\fi
+
 
 \begin{figure}
 \begin{center}
 \subimport{plots/}{Aims.tex}
-\end{center}\vskip-18pt
+\end{center}
 \caption{Aims of the introductory course. \label{fig:aims}}
 \end{figure}
 
@@ -704,14 +660,14 @@ accreditation as per the Shadbolt review.
 % deciding whether institutions are allowed to raise tuition fees in the
 % future.
 
-% The UK's Higher Education Academy -- the national body which
-% champions teaching quality -- has previously supported initiatives for
-% improving learning \& teaching in computer science, including
-% innovative pedagogies for
-% programming~\cite{crick-et-al-hea:2015,davenport-et-al:latice2016},
-% but we have not seen the desired cascading of best practice and wider
-% national impact.
-% should we mention HEA and our work?
+The UK's Higher Education Academy -- the national body which champions
+teaching quality -- has previously supported initiatives for improving
+learning \& teaching in computer science, including innovative
+pedagogies for
+programming~\cite{crick-et-al-hea:2015,davenport-et-al:latice2016},
+but we have not yet seen the desired cascading of best practice and
+wider national impact.
+%should we mention HEA and our work?
 
 \subsection{Comparison with Australasia}
 
@@ -730,23 +686,19 @@ Another difference shows up in the tools/environments are: Figure
 ``{\emph{None}}'' and ``{\emph{Other}}'' were the top two categories,
 with IDLE, at 15\%, the most popular named product. In the UK,
 ``{\emph{None}}'' is second, ``{\emph{Other}}'' is sixth and IDLE
-eighth. Eclipse, the UK favourite, was an ``also ran'' in \cite{mason+cooper:2014}.
-%, with no ``None'' @Ellen: is that right?{\bf{[@Tom/James?: No, ``none'' scores second for us 28.2\% but I didn't think to include it in graph. I can add it if you like.]  @Ellen, yes please}}.
-
+eighth. Eclipse, the UK favourite, was an ``also ran'' in
+\cite{mason+cooper:2014}.
 
 \section{Acknowledgements}
 
 The authors would like to thank the participants for their engagement
 with the survey, as well as R. Mason and G. Cooper from Southern Cross
 University, Australia, for providing us with their survey and
-permission to use it.
-% HEFCE? I think we should in the final version, but leave them out for now.
-% CPHC? Not really
-% GW4 - JHD has asked what the form of words should be.
-We are grateful to the GW4 Alliance (Universities of Bath, Bristol,
-Cardiff and Exeter) for funding the  survey.  % HGD deleted "underpinning"
-% bib
-\bibliographystyle{abbrv}
+permission to use it. We are grateful to the GW4 Alliance
+(Universities of Bath, Bristol, Cardiff and Exeter) for funding the
+survey.
+
+\bibliographystyle{ieeetr}
 \bibliography{sigcse2017}
 
 \end{document}
