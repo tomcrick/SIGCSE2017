@@ -152,7 +152,7 @@ reported.
 
 \begin{figure}
 \begin{center}
-\subimport{plots/}{tariffGroupCompare.tex}
+\subimport{plots/}{tariffGroupCompareWide.tex}
 \caption{The number of responding universities per Nation/   
  Tariff Group.\label{fig:TG}}
 \end{center}
@@ -188,7 +188,7 @@ from certain departments, and these were reconciled by direct enquiry.
 
 \begin{figure}
 \begin{center}
-\subimport{plots/}{langPercentCompare.tex}
+\subimport{plots/}{langPercentCompareWide.tex}
 \end{center}
 \caption{Language popularity by percentage of courses and students (excl. OU).\label{fig:lang}}
 \end{figure}
@@ -242,7 +242,7 @@ questions and due to this the response rate varies by question.
 
 \begin{figure}
 \begin{center}
-\subimport{plots/}{reasonsByCourseCompare.tex}
+\subimport{plots/}{reasonsByCourseCompareWide.tex}
 \end{center}
 \caption{Reasons given for choosing a programming language by percentage for: all languages; Java; and Python.\label{fig:reasons}}
 \end{figure}
@@ -288,14 +288,14 @@ used after another programming language.
 
 \begin{figure}[ht]
 \begin{center}
-\subimport{plots/}{langByTariffPercent.tex}
+\subimport{plots/}{langByTariffPercentWide.tex}
 \end{center}%\vskip-12pt  JHD: Oddly, this vskip seems counterproductive
 %\caption{The breakdown of programming languages for each of the Tariff Groups.}
 %\end{figure}
 %
 %\begin{figure}
 \begin{center}
-\subimport{plots/}{TariffByLangPercent.tex}
+\subimport{plots/}{TariffByLangPercentWide.tex}
 \end{center}
 \caption{The breakdown of programming languages by Nation and Tariff Groups.\label{fig;LangTariff}}
 \end{figure}
@@ -353,7 +353,7 @@ pedagogically most useful.
 
 \begin{figure}
 \begin{center}
-\subimport{plots/}{UseAndDifficultyCompareLanguages.tex}
+\subimport{plots/}{UseAndDifficultyCompareLanguagesWide.tex}
 \end{center}
 %\caption{The median of the perceived difficulty and usefulness of language, where 1 is `extremely easy' and 7 is `extremely difficult' for difficulty and 1 is `extremely useful' and 7 is `extremely useless' for usefulness.}%  Answers must have been given by at least two instructors.}
 \caption{The median of the perceived difficulty and [pedagogic] usefulness of language, where 1 is `extremely easy/useful' and 7 is `extremely difficult/useless'.% Answers must have been given by at least two instructors.
@@ -371,16 +371,24 @@ pedagogically most useful.
 % \end{tabular}
 % \end{table}
 
+
+
 \begin{figure}[ht]
 \begin{center}
-\subimport{plots/}{paradigmByTariffPercent.tex}
+\subimport{plots/}{paradigmByTariffPercentWide.tex}
+\end{center}
+\begin{center}
+\subimport{plots/}{TariffByParadigmPercentWide.tex}
 \end{center}
 \caption{The breakdown of the main paradigm in use for every Tariff Group.\label{fig:paradigmTariff}}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[ht]
 \begin{center}
-\subimport{plots/}{ParadigmByLangPercent.tex}
+\subimport{plots/}{ParadigmByLangPercentWide.tex}
+\end{center}
+\begin{center}
+\subimport{plots/}{LangByParadigmPercentWide.tex}
 \end{center}
 \caption{The breakdown of the main paradigm in use for each programming language.\label{fig:paradigmLang}}
 \end{figure}
@@ -394,8 +402,8 @@ with many participants noting that more than paradigm is taught in
 their course. Although this was to be expected, we wanted to be able
 to directly compare our results to the 2013 Aus/NZ survey, and so did
 not alter the question. The most popular paradigm is object-oriented
-with 50\% (N=40) followed by procedural (N=27, 33.8\%) and functional
-(N=7, 8.75\%); logical was also offered as a choice but was not
+with 50\% ($\mathrm{n}=40$) followed by procedural ($\mathrm{n}=27$, 33.8\%) and functional
+($\mathrm{n}=7$, 8.75\%); logical was also offered as a choice but was not
 selected.
 
 %\subsubsection{Paradigm by nation and tariff score}
@@ -435,7 +443,7 @@ fact that Python was almost exclusively viewed as procedural.
 
 \begin{figure}[ht]
 \begin{center}
-\subimport{plots/}{toolPercentCompare.tex}
+\subimport{plots/}{toolPercentCompareWide.tex}
 \caption{Tool or environment popularity by percentage of courses and students.\label{fig:tools}}
 \end{center}
 \end{figure}
@@ -487,7 +495,7 @@ with one respondent using eight.
 
 \begin{figure}[ht]
 \begin{center}
-\subimport{plots/}{reasonsByCourseCompareTool.tex}
+\subimport{plots/}{reasonsByCourseCompareToolWide.tex}
 \end{center}
 \caption{Reasons given for choosing a tool or environment by percentage for: all tools and environments; BlueJ; and Eclipse.\label{fig:reasonsTools}}
 \end{figure}
@@ -522,7 +530,7 @@ degree (Figure~\ref{fig:toolreuse}).
 
 \begin{figure}[ht]
 \begin{center}
-\subimport{plots/}{timingOtherCourseTool.tex}
+\subimport{plots/}{timingOtherCourseToolWide.tex}
 \end{center}
 \caption{For each tool or environment, whether it is used: for an initial part of the first programming course; throughout the whole of the first programming course; in any other course in the degree.\label{fig:toolreuse}}
 \end{figure}
@@ -537,7 +545,7 @@ the tool/IDE, shown in Figure~\ref{fig:toolhard}.
 
 \begin{figure}
 \begin{center}
-\subimport{plots/}{DifficultyYouStudentsCompareTools.tex}
+\subimport{plots/}{DifficultyYouStudentsCompareToolsWide.tex}
 \end{center}
 \caption{The median difficulty rating of tool for the instructor and students to use, where 1 is `extremely easy' and 7 is `extremely difficult'.  %Answers must have been given by at least two instructors.
 \label{fig:toolhard}}
@@ -554,9 +562,19 @@ other courses.
 \subsection{Other Aspects of the Course}
 
 \subsubsection{External Delivery}
-\begin{figure}
+
+Participants were asked ``{\emph{Do you offer external delivery of your course? (i.e. do you have options for your course where students are not required to attend regular lectures, workshops, labs or tutorials?)}}''. The responses to this question were overwhelmingly in the negative; 70/74 (94.6\%) answered ``{\emph{No}}''.
+
+\begin{figure}[th]
 \begin{center}
-\subimport{plots/}{Steps.tex}
+\subimport{plots/}{ResourcesWide.tex}
+\end{center}\vskip-18pt
+\caption{Resources provided to students.\label{fig:Resources}}
+\end{figure}
+
+\begin{figure}[th]
+\begin{center}
+\subimport{plots/}{StepsWide.tex}
 \end{center}
 \caption{Steps taken to determine whether students have received unauthorised assistance on assignments.\label{fig:Plagiarise}}
 \end{figure}
@@ -565,15 +583,14 @@ other courses.
 
 The questionnaire asked about the resources in terms of examples,
 books etc. provided to students. The results are rather similar to the
-2013 Aus/NZ survey~\cite[Figure 14]{mason+cooper:2014} so we do not
-repeat that here.
+2013 Aus/NZ survey~\cite[Figure 14]{mason+cooper:2014} and are displayed in Figure~\ref{fig:Resources}.
 
+\subsubsection{Unauthorised assistance}
+The vast majority of instructors surveyed (89.3\%) consider the possibility that students or groups of students may be receiving unauthorised assistance (e.g. from other students in the class, from people outside the class, or via the internet) when doing assignments. When asked how concerned they were about this possibility, 9 answered ``{\emph{not concerned}}'', 39 answered ``{\emph{somewhat concerned}}'' and 17 reported ``{\emph{very concerned}}''. 
 
-%\subsubsection{Unauthorised assistance}
-We asked participants: ``{\emph{What steps do you take to try to
+We also asked participants: ``{\emph{What steps do you take to try to
 determine whether students have received unauthorised assistance on
-assignments?}}''. The details are in the full paper\footnote{The full
-paper will shortly be available on arXiv.}, but range from
+assignments?}}''. The details are displayed in Figure~\ref{fig:Plagiarise} and range from
 ``{\emph{notice unlikely similarities}}'' (59.1\% of the 66
 instructors who responded to this question) to ``{\emph{interview some
 students/groups at random}}'', selected by only five instructors.
@@ -582,20 +599,14 @@ students/groups at random}}'', selected by only five instructors.
 
 
 % {\bf{[@James: this was one of the questions given to me by Raina, but it's possible that it was only added to the list after [8] was published. So might not be correct to say that it was asked by them.]}} 
-We report our results in Figure~\ref{fig:Plagiarise}, as we think they
-are of general interest.
+%We report our results in Figure~\ref{fig:Plagiarise}, as we think they
+%are of general interest.
 
-%\begin{figure}
-%\begin{center}
-%\subimport{plots/}{Resources.tex}
-%\end{center}\vskip-18pt
-%\caption{Resources provided to students.}
-%\end{figure}
 
 
 \begin{figure}
 \begin{center}
-\subimport{plots/}{Aims.tex}
+\subimport{plots/}{AimsWide.tex}
 \end{center}
 \caption{Aims of the introductory course. \label{fig:aims}}
 \end{figure}
